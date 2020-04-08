@@ -1,0 +1,17 @@
+﻿/* front end */
+h2.widget-title,.pages
+{
+color:#1DBF35;
+}
+#moj-widget-3 > ul:nth-child(3) > li > a{
+
+}
+
+.taxonomy,.comment
+{
+
+cursor:pointer;	
+}
+ul {
+  list-style: none;
+}

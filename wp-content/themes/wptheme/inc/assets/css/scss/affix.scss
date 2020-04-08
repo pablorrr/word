@@ -1,0 +1,41 @@
+﻿
+/* 
+ * Affix effect implementation - Bootstrap 4
+ * Bootstrap v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * source https://getbootstrap.com/
+ * @package LaRestaurante
+ */
+
+.affix {
+   position: fixed;
+   top: 0;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    background-color: #000000; 
+    border-color: orange;
+
+& a {
+	color: #000000 !important;
+    padding: 15px !important;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;}
+
+
+&-top a {
+  padding: 20px !important;
+  font-size: 15pt; }
+  
+&-bottom {
+ position: absolute; }
+} 
+
+
+.none {
+  visibility: hidden; }
+  
+  
+ 
+

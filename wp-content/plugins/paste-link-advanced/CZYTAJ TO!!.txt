@@ -1,0 +1,18 @@
+ABY SKONWERTOWAC WSTEPNIE GALLERY NA WKLEJ LINK ADVANCED NALEZY:
+
+usunac: kolumne podczas kreacji baz danych dot, obrazka: plik: moj plugin model ,linia 37
+
+
+usunac zmienna slide_url :plik moj plugin slide enntry : linia:10
+
+usuniac linie 99-110 w funkcji validate plik: moj plugin slide enetry
+
+
+ususnac pierwsza komorke w tablicy w pliku form odpowiedzilana za printowanie i dodanie obrazka
+
+
+
+Poprawic napisy w labelka
+
+
+WADY pluginu: glownie : pobierz wolna pozycje, pole zwraca zero pomimo zmian , nalezy wpisywac recznie ., NIE dizla poprawnie opcja opublikowany w formularzu edycji, po odznaczeniu pola po zapisz ( button) i tak sie wlacza na odznaczony/opublikowany

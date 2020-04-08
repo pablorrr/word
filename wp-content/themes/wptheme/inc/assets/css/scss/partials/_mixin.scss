@@ -1,0 +1,16 @@
+﻿@mixin margin($property){
+    margin-left:$property;
+	margin-right:$property; 
+ }
+ 
+@mixin timline-prop {
+    content: "";
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 690px;
+    width: 4px;
+    height:340px;
+    background-color: #3b5998; 
+    box-shadow: 0 0 5px #4582ec;
+} 

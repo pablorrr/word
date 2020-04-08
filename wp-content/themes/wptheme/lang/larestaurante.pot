@@ -1,0 +1,883 @@
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LaRestaurante\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-09 15:31+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: archive.php:25
+msgid "Browse by category :"
+msgstr ""
+
+#: archive.php:42
+msgid "Find post:"
+msgstr ""
+
+#: archive.php:59
+msgid "Search Results"
+msgstr ""
+
+#: archive.php:78
+msgid "Post Links"
+msgstr ""
+
+#: archive.php:92
+msgid "Theres no posts"
+msgstr ""
+
+#: archive.php:108
+msgid "Choose by category or tagname"
+msgstr ""
+
+#: archive.php:157 frontpage-segments/booking.php:111
+#: inc/template-tags.php:350 inc/admin/contact-form/contact-form.php:456
+msgid "Submit"
+msgstr ""
+
+#: archive.php:161
+msgid "content found"
+msgstr ""
+
+#: archive.php:195
+msgid "Sorry theres no tags or category assigned to any posts"
+msgstr ""
+
+#: comments.php:32
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:37
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:53 comments.php:69
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:56 comments.php:71
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:57 comments.php:72
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:84
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:93
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:94
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:95
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:96
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:101
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags and attributes:"
+msgstr ""
+
+#: footer.php:53
+msgid "Sign in with Twitter"
+msgstr ""
+
+#: footer.php:68
+msgid "Sign in with Facebook"
+msgstr ""
+
+#: footer.php:82
+msgid "Sign in with Google"
+msgstr ""
+
+#: footer.php:96
+msgid "Sign in with Youtube"
+msgstr ""
+
+#: footer.php:106
+msgid "Popular tags and categories"
+msgstr ""
+
+#: footer.php:181
+msgid "Log out"
+msgstr ""
+
+#: footer.php:187
+msgid "Go to admin panel here"
+msgstr ""
+
+#: footer.php:195
+msgid "telephone number: "
+msgstr ""
+
+#: footer.php:204
+msgid "&copy;"
+msgstr ""
+
+#: front-page.php:30
+#, php-format
+msgid ""
+"You can turn on segment mode in admin panel, \n"
+"\t\t\t\t\t\t<a href=\"%1$s\" target=\"%2$s\">here</a>."
+msgstr ""
+
+#: header.php:69
+#, php-format
+msgid ""
+"Theres no menu, <a href=\"%1$s\" target=\"%2$s\">go to \t\tadmin \tpanel and "
+"create and activate menu</a>."
+msgstr ""
+
+#: header.php:118
+msgid " of the day"
+msgstr ""
+
+#: header.php:125
+msgid "Post of the day"
+msgstr ""
+
+#: search.php:20
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:13
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:15
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: single.php:45
+#, php-format
+msgid ""
+"Comments are disabled go to admin panel to change it,you can also check "
+"settings->discuss or if your custom post type supports comments <a href="
+"\"%1$s\" target=\"%2$s\">enable comments please here</a>."
+msgstr ""
+
+#: taxonomy.php:27
+msgid "Sorry, there are no posts in this category"
+msgstr ""
+
+#: frontpage-segments/about-us.php:91 frontpage-segments/menu.php:72
+#: frontpage-segments/our-team.php:75 frontpage-segments/our-team.php:110
+#: frontpage-segments/our-team.php:145 frontpage-segments/restaurant.php:85
+#: frontpage-segments/restaurant.php:124 frontpage-segments/restaurant.php:163
+#: frontpage-segments/services.php:79 frontpage-segments/services.php:110
+#: frontpage-segments/services.php:142
+#, php-format
+msgid ""
+"Empty post, <a href=\"%1$s\" target=\"%2$s\">publish your first post please "
+"here</a>."
+msgstr ""
+
+#: frontpage-segments/booking.php:28
+msgid "Booking"
+msgstr ""
+
+#: frontpage-segments/booking.php:29
+msgid "Click here to open booking"
+msgstr ""
+
+#: frontpage-segments/booking.php:106
+msgid "To reserve a table please fill up this form"
+msgstr ""
+
+#: frontpage-segments/booking.php:113
+msgid "Reset"
+msgstr ""
+
+#: frontpage-segments/booking.php:137
+#: inc/admin/reservations/reservations.php:335
+msgid "Your name e.g. Pablozzz"
+msgstr ""
+
+#: frontpage-segments/booking.php:152
+msgid "Your E-Mail e.g. monkn@op.eu"
+msgstr ""
+
+#: frontpage-segments/booking.php:166
+#: inc/admin/reservations/reservations.php:353
+msgid "places must be digit and not higher than 8"
+msgstr ""
+
+#: frontpage-segments/booking.php:180
+#: inc/admin/reservations/reservations.php:363
+msgid "Phone Number like e.g. format 6666666667 (ten digit)"
+msgstr ""
+
+#: frontpage-segments/booking.php:193
+#: inc/admin/reservations/reservations.php:373
+msgid "Data reservation format example yyyy-mm-dd"
+msgstr ""
+
+#: frontpage-segments/form.php:18
+msgid "Contact Us"
+msgstr ""
+
+#: frontpage-segments/gallery.php:18
+msgid "Our Gallery"
+msgstr ""
+
+#: frontpage-segments/gallery.php:128
+#, php-format
+msgid ""
+"No pictures loaded, <a href=\"%1$s\" \t\ttarget=\"%2$s\">publish your first "
+"picture please here</a>."
+msgstr ""
+
+#: frontpage-segments/menu.php:64 frontpage-segments/our-team.php:68
+#: frontpage-segments/our-team.php:103 frontpage-segments/our-team.php:138
+#: frontpage-segments/restaurant.php:78 frontpage-segments/restaurant.php:117
+#: frontpage-segments/restaurant.php:156 frontpage-segments/services.php:73
+#: frontpage-segments/services.php:104 frontpage-segments/services.php:135
+msgid "Read more..."
+msgstr ""
+
+#: frontpage-segments/opinion.php:16
+msgid "Opinion"
+msgstr ""
+
+#: frontpage-segments/opinion.php:22
+msgid "Get the reviews of others"
+msgstr ""
+
+#: frontpage-segments/opinion.php:31
+msgid "in day"
+msgstr ""
+
+#: inc/customizer.php:32
+msgid "Header Banner"
+msgstr ""
+
+#: inc/customizer.php:49
+msgid "Header and Menu Navbar Background Color"
+msgstr ""
+
+#: inc/customizer.php:50
+msgid "Applied to the header on small screens."
+msgstr ""
+
+#: inc/customizer.php:59
+msgid "Other Customizations"
+msgstr ""
+
+#: inc/customizer.php:67
+msgid "Background Color"
+msgstr ""
+
+#: inc/customizer.php:68
+msgid "This is a section for Background Color."
+msgstr ""
+
+#: inc/customizer.php:76
+msgid "Background Image"
+msgstr ""
+
+#: inc/customizer.php:93
+msgid "Link Color"
+msgstr ""
+
+#: inc/metabox.php:27 inc/metabox.php:36 inc/metabox.php:46 inc/metabox.php:57
+#: inc/metabox.php:70 inc/metabox.php:81 inc/metabox.php:93
+msgid "Select Layout"
+msgstr ""
+
+#: inc/metabox.php:111
+msgid "Sidebar On"
+msgstr ""
+
+#: inc/metabox.php:116
+msgid "Sidebar Off"
+msgstr ""
+
+#: inc/metabox.php:125
+msgid "Breadcrumbs On"
+msgstr ""
+
+#: inc/metabox.php:131
+msgid "Breadcrumbs Off"
+msgstr ""
+
+#: inc/setup.php:41
+msgid "primary"
+msgstr ""
+
+#: inc/template-tags.php:27
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:32
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:42
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:57 inc/template-tags.php:63
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:59
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:65
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:73 template-parts/content-page.php:39
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: inc/template-tags.php:150
+msgid ""
+"<strong class=\"btn-lg fr-end-butt\">Answer </strong><i class=\"icon-share-"
+"alt\"></i>"
+msgstr ""
+
+#: inc/template-tags.php:233
+msgid "main"
+msgstr ""
+
+#: inc/template-tags.php:349
+msgid "To view this protected post, enter the password below:"
+msgstr ""
+
+#: inc/template-tags.php:350
+msgid "Password:"
+msgstr ""
+
+#: inc/widgets.php:10
+msgid "Sidebar"
+msgstr ""
+
+#: inc/widgets.php:12 inc/widgets.php:21 inc/widgets.php:30 inc/widgets.php:39
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/widgets.php:19
+msgid "Footer 1"
+msgstr ""
+
+#: inc/widgets.php:28
+msgid "Footer 2"
+msgstr ""
+
+#: inc/widgets.php:37
+msgid "Footer 3"
+msgstr ""
+
+#: inc/admin/larestaurante-welcome-screen.php:47
+#, php-format
+msgid ""
+"Thanks for choosing LaRestaurante! Learn how to get the most out of your "
+"new theme on the %swelcome screen%s."
+msgstr ""
+
+#: inc/admin/larestaurante-welcome-screen.php:48
+msgid "Get started with LaRestaurante"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:134
+msgid "Please enter a valid email address in the 'FROM' field."
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:153
+msgid "Please enter a valid port in the 'SMTP Port' field."
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:166
+msgid "Settings are not saved."
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:172
+msgid "WP SMTP Settings"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:182
+msgid "Notice:"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:183
+msgid ""
+"The plugin's settings have been changed. In order to save them please don't "
+"forget to click the 'Save Changes' button."
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:190
+msgid "From Email Address"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:195
+msgid "This email address will be used in the 'From' field."
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:199
+msgid "From Name"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:204
+msgid "This text will be used in the 'FROM' field"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:208
+msgid "SMTP Host"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:212
+msgid "Your mail server"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:216
+msgid "Type of Encription"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:222
+msgid "None"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:225
+msgid "SSL"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:228
+msgid "TLS"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:229
+msgid "For most servers SSL is the recommended option"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:233
+msgid "SMTP Port"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:237
+msgid "The port to your mail server"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:241
+msgid "SMTP Authentication"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:243
+msgid "No"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:244
+msgid "Yes"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:245
+msgid "This options should always be checked 'Yes'"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:249
+msgid "SMTP username"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:253
+msgid "The username to login to your mail server"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:257
+msgid "SMTP Password"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:261
+msgid "The password to login to your mail server"
+msgstr ""
+
+#: inc/admin/contact-form/contact-form.php:267
+msgid "Save Changes"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:68
+#: woocommerce/myaccount/my-address.php:53
+msgid "Edit"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:69
+msgid "Delete"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:90
+#: inc/admin/reservations/reservations.php:331
+msgid "Name"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:91
+#: inc/admin/reservations/reservations.php:340
+msgid "E-Mail"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:92
+#: inc/admin/reservations/reservations.php:349
+msgid "places"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:93
+#: inc/admin/reservations/reservations.php:359
+msgid "Phone Number"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:94
+msgid "Data"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:95
+msgid "Add wish"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:187
+#, php-format
+msgid "Items deleted: %d"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:192
+msgid "Persons"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:194
+msgid "Add new"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:239
+msgid "Item was successfully saved"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:241
+msgid "There was an error while saving item"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:246
+msgid "Item was successfully updated"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:248
+msgid "There was an error while updating item"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:263
+msgid "Item not found"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:280
+msgid "Person"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:282
+msgid "back to list"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:344
+msgid "Your E-Mail e.g. monkeyfaon@op.pl"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:369
+msgid "Data reservation"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:380
+msgid "Additional wishes"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:411
+msgid "Name is required"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:414
+msgid "E-Mail is in wrong format"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:417
+msgid "Place must be a digit and not higher than 8"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:421
+msgid "Phone number is in wrong format"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:424
+msgid "Data is in wrong format"
+msgstr ""
+
+#: inc/admin/reservations/reservations.php:434
+msgid "Add Wish field is limited to 255 characters"
+msgstr ""
+
+#: inc/admin/sections/about-me.php:11
+msgid "About me"
+msgstr ""
+
+#: inc/admin/sections/about-me.php:12
+msgid "Im a freelancer.My passion is webmastering , especially Wordpress."
+msgstr ""
+
+#: inc/admin/sections/about-me.php:13
+#, php-format
+msgid "%sVisit my website%s"
+msgstr ""
+
+#: inc/admin/sections/doc.php:54
+msgid "Read documentation"
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:15
+#, php-format
+msgid "Welcome to the %sLaRestaurante%s Theme , enjoy it!!!"
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:16
+msgid "The theme contains many ways to configure."
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:22
+msgid ""
+"Customize this theme with Wordpress Customizer <span class=\"dashicons "
+"dashicons-admin-generic\"></span>"
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:23
+msgid ""
+"Use wordpress customizer to change the background color, background image, "
+"stylize headline and footer."
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:24
+msgid "Open the Customizer"
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:28
+msgid ""
+"Customize this theme with Codestar <span class=\"dashicons dashicons-admin-"
+"generic\"></span>"
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:29
+msgid ""
+"Codestar is a framework for building Wordpress options. Easy and user-"
+"friendly option boards will make this theme fully adapted to your needs."
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:31
+#, php-format
+msgid " <a href=\"%1$s\" target=\"%2$s\" class=\"%3$s\">Open the Codestar</a>"
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:36
+msgid ""
+"Manage reservations in your restaurant<span class=\"dashicons dashicons-"
+"calendar-alt\"></span>"
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:37
+msgid "Add, edit, delete, save, reservations in your restaurant"
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:39
+#, php-format
+msgid ""
+" <a href=\"%1$s\" target=\"%2$s\" class=\"%3$s\">Open the Reservations</a>"
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:45
+msgid ""
+"Configure menu location <span class=\"dashicons dashicons-menu\"></span>"
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:46
+msgid "Configure your menu"
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:47
+msgid "Configure menus"
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:50
+msgid ""
+"Set up your SMTP configuration<span class=\"dashicons dashicons-admin-network"
+"\"></span></span>"
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:51
+msgid ""
+"Simple Mail Transfer Protocol (SMTP) is an Internet standard for electronic "
+"mail (email) transmission. First defined by RFC 821 in 1982, it was updated "
+"in 2008 with Extended SMTP additions by RFC 5321, which is the protocol in "
+"widespread use today.</blockquote> Source:<a href=\"https://en.wikipedia.org/"
+"wiki/Simple_Mail_Transfer_Protocol\" target=\"_blank\"> Wikipedia</a>"
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:52
+#, php-format
+msgid " <a href=\"%1$s\" target=\"%2$s\" class=\"%3$s\">Open the WP SMTP</a>"
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:57
+msgid ""
+"Set up your permalinks<span class=\"dashicons dashicons-admin-site\"></span>"
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:59
+#, php-format
+msgid ""
+"Create %sCustom Links%s to this theme. Customized links simplify the "
+"readability of links and are more friendly seo."
+msgstr ""
+
+#: inc/admin/sections/lets-started.php:61
+#, php-format
+msgid ""
+" <a href=\"%1$s\" target=\"%2$s\" class=\"%3$s\">Open Permalink Settings</a>"
+msgstr ""
+
+#: inc/admin/sections/plugin-support.php:7
+msgid "Install recommended plugins"
+msgstr ""
+
+#: inc/admin/sections/plugin-support.php:10
+#, php-format
+msgid ""
+"Add to the subject plugins supporting take care of seo, security and "
+"\tinform users that you are using cookie in %sLaRestaurante%s"
+msgstr ""
+
+#: inc/admin/sections/plugin-support.php:18
+msgid ""
+"Install recommended plugins <span class=\"dashicons dashicons-admin-plugins"
+"\"></span>"
+msgstr ""
+
+#: inc/admin/sections/plugin-support.php:19
+#, php-format
+msgid ""
+"%sIncrease the functionality%s of your theme by applying extensions in the "
+"form of plugins. take care of seo, security on the network, cookie privacy "
+"policy and commercial selling- %sWoocommerce%s"
+msgstr ""
+
+#: inc/admin/sections/plugin-support.php:22
+msgid "Install &amp; Activate Recommended Plugins"
+msgstr ""
+
+#: inc/admin/sections/tabs.php:3
+msgid "Lets Begin!"
+msgstr ""
+
+#: inc/admin/sections/tabs.php:4
+msgid "Supported Plugins"
+msgstr ""
+
+#: inc/admin/sections/tabs.php:6
+msgid "Documentation"
+msgstr ""
+
+#: inc/custom-widget/custom-widget.php:86
+msgid "no posts"
+msgstr ""
+
+#: inc/custom-widget/custom-widget.php:94
+msgid "Recent comment:"
+msgstr ""
+
+#: inc/custom-widget/custom-widget.php:101
+msgid "Author: "
+msgstr ""
+
+#: inc/custom-widget/custom-widget.php:103
+msgid " on day: "
+msgstr ""
+
+#: inc/custom-widget/custom-widget.php:121
+msgid "Taxonomies :"
+msgstr ""
+
+#: inc/custom-widget/custom-widget.php:163
+msgid "Additional posts"
+msgstr ""
+
+#: inc/custom-widget/custom-widget.php:177
+msgid "Title"
+msgstr ""
+
+#: inc/custom-widget/custom-widget.php:185
+msgid "Post type: "
+msgstr ""
+
+#: inc/custom-widget/custom-widget.php:211
+msgid "Post type count"
+msgstr ""
+
+#: inc/custom-widget/custom-widget.php:230
+msgid "Taxonomy :"
+msgstr ""
+
+#: inc/custom-widget/custom-widget.php:257
+msgid "Comments meta"
+msgstr ""
+
+#: inc/custom-widget/custom-widget.php:263
+msgid "Show avatar"
+msgstr ""
+
+#: inc/custom-widget/custom-widget.php:270
+msgid "Show author"
+msgstr ""
+
+#: inc/custom-widget/custom-widget.php:277
+msgid "Show data"
+msgstr ""
+
+#: inc/custom-widget/custom-widget.php:284
+msgid "Show comment content"
+msgstr ""

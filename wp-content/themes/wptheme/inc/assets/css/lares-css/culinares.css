@@ -1,0 +1,654 @@
+/* 
+ * Here are most of the main styles of the theme css
+ * 
+ * 
+ * @package larestaurante 
+ */
+/* =Header 
+----------------------------------------------- */
+header .container-fluid {
+  padding: 0 !important; }
+
+/*site description*/
+.site-description {
+  margin-top: 2em !important; }
+
+/*logo-customizer*/
+img.logo {
+  width: 300px;
+  height: 200px; }
+
+/* buttons header style */
+header .btn-group-lg > .btn, .btn-lg {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.8rem; }
+
+header .btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  background-color: #24252557; }
+
+header .btn-secondary {
+  color: #e07331; }
+
+/* header button columns */
+header .mt-1 {
+  padding: 15px; }
+
+/* header text */
+header .site-branding-text {
+  margin-top: 300px;
+  text-align: center; }
+
+/* angle scroller down header*/
+header .svg-inline--fa {
+  display: inline-block;
+  font-size: 30pt;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -.125em; }
+
+/* header text and buttons style */
+.container-fluid > h3 {
+  color: white;
+  text-align: right; }
+
+h1.site-title {
+  font-size:2.3em;	
+  text-transform: uppercase; }
+
+.site-description {
+  font-size: 20pt; } 
+ 
+ 
+ 
+ 
+/* =Blog Css
+----------------------------------------------- */
+#load-posts.container.larestaurante-posts-container {
+  margin-top: 400px; }
+
+#infinite-handle {
+  margin-bottom: 50px;
+  text-align: center; }
+
+.spinner {
+  margin: auto; }
+
+.entry-footer {
+  background-color: transparent; }
+
+/* =Single Post Css
+----------------------------------------------- */
+.row.mx-auto.m-single {
+  width: 100%;
+  padding: 5%; }
+
+.m-single {
+  margin-top: 30px; }
+
+#main > ol > li {
+  padding: 10px; }
+
+#secondary {
+  padding-left: 15%; }
+/*sidebar*/
+
+#secondary.widget-area{
+	margin-top:100px;
+	padding:15px; 
+}
+#secondary.widget-area > img{
+	width:60%;
+	margin-bottom:20px;
+	opacity:0.5;
+}  
+
+/* =Woocomerce
+----------------------------------------------- */
+body.woocommerce-page aside#secondary {
+  display: none; }
+
+#woocommerce-wrapper {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  padding: 55px; }
+
+#main > ul > li.product-type-simple > div > a {
+  color: #343a40; }
+
+/*cart page*/
+.woocommerce .cart-collaterals, .woocommerce-page .cart-collaterals {
+  width: 100%;
+  margin-top: 25%; }
+
+/*update cart button*/
+.btn.btn-outline-primary.updt {
+  margin-top: 10%; }
+
+#content table.cart td.actions .coupon,
+.woocommerce table.cart td.actions .coupon,
+.woocommerce-page #content table.cart td.actions .coupon,
+.woocommerce-page table.cart td.actions .coupon {
+  width: 100%;
+  margin-top: 20%; }
+
+.btn.btn-outline-primary,
+#review_form #respond .form-submit input,
+.add-to-cart-container {
+  color: white;
+  border-style: outset;
+  border-radius: 5%;
+  background-color: #ff944d;
+  text-align: center; }
+
+.added_to_cart.wc-forward {
+  color: white;
+  text-align: center; }
+
+.added_to_cart.wc-forward:hover {
+  background-color: #ffc299; }
+
+.add-to-cart-container > a:hover {
+  background-color: #ffc299; }
+
+#review_form #respond .form-submit input:hover {
+  background-color: #ffc299; }
+
+.btn.btn-outline-primary:hover {
+  background-color: #ffc299; }
+
+div.cart-collaterals a.btn.btn-primary.btn-lg.btn-block {
+  background-color: #7efe36b3; }
+  div.cart-collaterals a.btn.btn-primary.btn-lg.btn-block:hover {
+    background-color: #ffc299; }
+
+.woocommerce .quantity .qty {
+  display: none; }
+
+/*  shop page*/
+/* .site-search filter */
+#main > div.site-search {
+  margin-bottom: 5em; }
+
+/*sorting ordering*/
+#main > form.woocommerce-ordering {
+  margin: 0 0 5em; }
+
+/* =Woocomerce media-queries
+----------------------------------------------- */
+@media (min-width: 0px) and (max-width: 768px) {
+  #main > ul > li.product.status-publish,
+  section.related.products ul > li.status-publish {
+    width: 100%; } }
+/* =Restaurants Segment
+----------------------------------------------- */
+body.wide .site-main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+body.default .site-main {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto; }
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+.text-muted {
+  color: #777; }
+
+.text-primary {
+  color: #fed136; }
+
+p {
+  font-size: 14px;
+  line-height: 1.75; }
+  p.large {
+    font-size: 16px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700; }
+
+.img-centered {
+  margin: 0 auto; }
+
+/* =Archives
+----------------------------------------------- */
+#pointscroll {
+  visibility: hidden; }
+
+body > div.container.m-arch > div:nth-child(1) {
+  margin-top: 250px; }
+
+.m-arch {
+  margin-top: 50px; }
+
+body > div.container.m-arch > div:nth-child(4) > div > form > div:nth-child(2) > label {
+  padding: 10px; }
+
+body > div.container.m-arch > div:nth-child(2) > div > form > button,
+body > div.container.m-arch > div:nth-child(4) > div > form > button {
+  margin-left: 15px; }
+
+.arch-padding {
+  padding: 35px; }
+
+.bg-light-gray {
+  background-color: #f5f5f5; }
+
+/* archive pagination spinner */
+/* 
+ * Flaired edges, by Tomas Theunissen
+ * author link: https://www.codeply.com/go/A4snu1dcrK/bootstrap-4-fiddle 
+ * license : MIT
+ * MIT link: https://github.com/iatek/codeply/blob/master/LICENSE
+ */
+.loader {
+  margin-bottom: 15px;
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #3498db;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite; }
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+
+/* =Img Animation
+----------------------------------------------- */
+.anim {
+  margin-bottom: 3em;
+  transition: all 0.4s cubic-bezier(0.4, 0.21, 1, 1); }
+  .anim:hover {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.8; }
+
+/* =Menu
+----------------------------------------------- */
+body > header > div > div > div > nav.arch-nav > h1 {
+  padding: 15px; }
+
+nav:not(.arch-nav) {
+  border-color: transparent;
+  opacity: 0.5;
+  color: #fed136; }
+
+.navbar :hover,
+.navbar :focus,
+.navbar :active {
+  color: #fec503; }
+
+.navbar .navbar-toggler {
+  border-color: #101010;
+  background-color: #171516; }
+  .navbar .navbar-toggler:hover, .navbar .navbar-toggler:focus {
+    background-color: grey; }
+
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: orange; }
+
+.navbar ul li:hover > ul {
+  display: block;
+  /* show sub menus when hovering over a parent */ }
+
+.navbar-nav {
+  padding-left: 5em; }
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 25px 0;
+    border: 0;
+    background-color: transparent;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+    font-size: 1em; }
+
+  .navbar .navbar-nav > .active > a {
+    border-radius: 3px; }
+
+  .navbar .navbar-shrink {
+    padding: 10px 0;
+    background-color: #222; }
+
+  .navbar .navbar-shrink .navbar-brand {
+    font-size: 1.5em; } }
+/* =Slide img  title overlay effect 
+----------------------------------------------- */
+/* source https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slidetop*/
+.box-img-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 3em; }
+
+.img-slide {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all .5s ease; }
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #dcc98e85;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease; }
+
+.circle-cover {
+  border-radius: 100%; }
+
+.box-img-container:hover .overlay {
+  bottom: 0;
+  height: 100%; }
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; }
+
+/* =Grid gallery
+----------------------------------------------- */
+/*
+ * source:https://bootsnipp.com/tags/gallery	
+ * licence MIT
+ */
+* {
+  box-sizing: border-box; }
+
+.gal-row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px; }
+
+/* Create four equal columns that sits next to each other */
+.gal-col {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px; }
+
+.gal-col img {
+  margin-top: 8px;
+  vertical-align: middle; }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gal-col {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%; } }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gal-col {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%; } }
+/* =Front end buttons
+----------------------------------------------- */
+.fr-end-butt {
+  background-color: #212529;
+  border: none;
+  color: orange;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer; }
+  .fr-end-butt:hover {
+    background-color: #ffbf00;
+    color: black;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+@media only screen and (max-width: 1100px) {
+  .timeline-image {
+    display: none; } }
+aside.clients img {
+  margin: 50px auto; }
+
+/* =Segments
+----------------------------------------------- */
+/*hr styling source: https://codepen.io/ibrahimjabbari/pen/ozinB */
+hr.styled {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); }
+
+div.container > div.row > div.text-center > img {
+  width: 20%;
+  opacity: 0.5; }
+
+.text-justify {
+  font-size: 12pt;
+  text-align: justify; }
+
+.m-bt-title {
+  margin-bottom: 10%; }
+
+.subtitle {
+  color: black;
+  cursor: pointer; }
+
+section {
+  padding: 80px 0; }
+
+section h2.section-heading {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 40px; }
+
+section h3.section-subheading {
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400; }
+
+/* service segment */
+.fa-stack {
+  margin-bottom: 1em !important; }
+
+@media (min-width: 768px) {
+  section {
+    padding: 150px 0; } }
+/* =Links
+----------------------------------------------- */
+.link-front, .link-post, .header-front {
+  -webkit-transition-duration: 0.9s;
+  /* Safari */
+  transition-duration: 0.9s; }
+
+.link-front,
+.link-post:visited {
+  color: rgba(30, 140, 190, 0.8); }
+
+.link-front:hover {
+  font-size: 35pt;
+  color: #6c757d; }
+
+.link-post:hover {
+  font-size: 1.1em;
+  color: #6c757d; }
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .link-front:hover {
+    font-size: 1.1em;
+    color: #6c757d; } }
+/* =Carousel
+----------------------------------------------- */
+#carouselroll > div h2 {
+  color: white; }
+
+#carouselroll > div p {
+  color: white; }
+
+img.bigcarousel {
+  width: 100%; }
+
+/* =Widgets
+----------------------------------------------- */
+#secondary > .widget {
+  margin-bottom: 20px; }
+
+/* =Single Posts
+----------------------------------------------- */
+body ol.breadcrumb {
+  font-size: 2em; }
+
+#persons_form_meta > button.handlediv {
+  visibility: hidden; }
+
+/* =Footer
+----------------------------------------------- */
+footer {
+  padding: 25px 0;
+  text-align: center;
+  background-color: #333333; }
+  
+
+#footer h2, #footer h3 {
+  color: beige; }
+
+footer span.copyright {
+  text-transform: uppercase;
+  text-transform: none;
+  line-height: 40px; }
+
+ul.social-buttons {
+  margin-bottom: 0; }
+
+ul.social-buttons li a {
+  padding-left: 30%;
+  display: block;
+  width: 40px;
+  height: 40px; }
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: 0; }
+
+::-moz-selection {
+  text-shadow: none;
+  background: #fed136; }
+
+::selection {
+  text-shadow: none;
+  background: #fed136; }
+
+img::selection {
+  background: 0 0; }
+
+img::-moz-selection {
+  background: 0 0; }
+
+/* https://wpsmackdown.com/wordpress-tag-cloud-css-styles/  */
+.tagcloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.tagcloud a {
+  display: inline-block;
+  margin: 0.125rem;
+  padding: 0.4375rem;
+  background-color: beige;
+  border-style: none;
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
+  text-decoration: none; }
+  .tagcloud a:hover, .tagcloud a:focus {
+    background-color: #fadfa8;
+    color: white;
+    transform: scale(1.1); }
+
+.list-group-item {
+  background-color: transparent; }
+
+.list-group {
+  border-style: hidden; }
+
+#footer > div > div:nth-child(2) > div:nth-child(1) > ul > li {
+  color: beige; }
+
+#footer a:hover {
+  color: #a0a094;
+  text-decoration: overline; }
+
+body {
+  webkit-tap-highlight-color: #fed136; }
+
+body .panel-default > .panel-heading-custom {
+  background-color: #ff9900; }
+
+body .panel-info > .title-panel-heading-custom {
+  background-color: transparent; }
+
+/* =Mediaqueries
+----------------------------------------------- */
+@media (min-width: 0px) and (max-width: 768px) {
+  h1.respo, p.respo {
+    text-transform: uppercase;
+    font-size: 1.5em; } }
+@media screen and (min-width: 768px) {
+  h1.respo {
+    text-transform: uppercase;
+    font-size: 30pt; } }
+@media only screen and (max-width: 600px) {
+  .gallery, .bigcarousel, .restaurants {
+    display: none; } }
+/*# sourceMappingURL=culinare.css.map */
+
+/*# sourceMappingURL=culinares.css.map */

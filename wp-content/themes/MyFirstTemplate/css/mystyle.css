@@ -1,0 +1,110 @@
+/* Theme Name: My First TEMPLATE */
+
+ body { font-family: Arial, Helvetica, sans-serif; font-size: 14px; background: #D3D3D3; } 
+/* .clear { clear: both; } */
+
+#navbar div#mainnav ul { list-style-type:none; position :relative;  }
+#navbar div#mainnav ul li { float: left; font-size: 18px; margin-right: 20px; }
+#navbar div#mainnav ul li a { color: white; text-decoration: none;  }
+#navbar div#mainnav ul li a:hover { color: #999; }
+
+.content{
+	clear:both;
+	float:left;
+	max-width: 40%;
+	padding:25px;
+	display:inline-table;
+  
+    margin-right: auto; 
+	margin-bottom:10%;
+	position: relative;
+    top: 60px;
+	
+	}
+#sidebar{top:100px; display:block; position: relative; left:35%;}	
+#footer{ clear:both; display:block;position: relative; top: 30%; left:15%; bottom:16px;}
+
+
+.entry h1 a { color: black; text-decoration: none; }
+/* wordpress galeria built in
+*/
+
+.gallery { margin: 0 auto 18px; }
+.gallery .gallery-item {
+	float: left;
+	margin-top: 0;
+	text-align: center;
+	width: 50%;
+}
+.gallery-columns-2 .gallery-item { width: 50%; }
+.gallery-columns-4 .gallery-item { width: 25%; }
+.gallery img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: 3px solid orange;
+	padding: 8px;
+	background: yellow;
+}
+.gallery img:hover {
+	background: orange;
+}
+.gallery-columns-2 .attachment-medium {
+	max-width: 92%;
+	height: auto;
+}
+.gallery-columns-4 .attachment-thumbnail {
+	max-width: 84%;
+	height: auto;
+}
+.gallery .gallery-caption {
+	color: #888;
+	font-size: 12px;
+	margin: 0 0 12px;
+}
+.gallery dl, .gallery dt { margin: 0; }
+.gallery br+br { display: none; }
+
+
+
+
+
+
+    /* padding: 5px; */
+/* =WordPress Core
+-------------------------------------------------------------- */
+
+
+
+/* #header { position: relative; }
+#logo { display: block; width: 348px; height: 45px; background: url(img/logo.png) no-repeat; margin-top: 45px; }
+#rss { display: block; width: 34px; height: 35px; background: url(img/rss.png) no-repeat; position: absolute; top: 3px; right: 0px; }
+#navbar { height: 60px; background: url(img/navbar.png) no-repeat; margin-top: 7px; position: relative; } */
+
+
+
+/* #searchform { position: absolute; right: 10px; top: 22px; }
+#searchform input { width: 214px; border: none; background: none; }
+
+#container { background: url(img/content.png) repeat-y; padding-top: 48px; } 
+#content { width: 700px; float: left; padding-left: 13px; margin-right: 20px;  }
+#sidebar { width: 215px; float: left; }
+
+#container_page { background: white; padding-top: 48px; }
+#content_page { width: 900px; padding: 0 0 5px 13px; margin-right: 20px; } */
+
+
+/* .entry { margin-bottom: 60px; }
+.entry h1 { font-size: 18px; font-weight: normal; margin-bottom: 4px; }
+.entry h1 a { color: black; text-decoration: none; }
+.entry p.entry-date { font-size: 12px; margin-bottom: 8px; }
+.entry img.entry-thumb { float: left; margin-right: 15px; }
+.entry p { line-height: 19px; margin-top: 5px; }
+.entry a.more-link { color: #D40900; text-decoration: none; }
+.entry a { color: #D40900; text-decoration: none; }
+
+.widget { margin-bottom: 40px; }
+.widget h2 { font-size: 18px; font-weight: normal; margin-bottom: 10px; }
+.widget p { line-height: 19px; margin-top: 5px; }
+.widget a { color: #D40900; text-decoration: none; }
+
+#footer { margin-top: 10px; }
+#footer p { font-size: 12px; margin-left: 10px; } */
