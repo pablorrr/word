@@ -87,39 +87,15 @@
 
 			$description = get_bloginfo( 'description', 'display' );
 
-			if ( $description || is_customize_preview() ) :
+			if ( $description || is_customize_preview() ) :?>
 			
-						$cs_radio_options_menu = cs_get_option( 'menu_day' ); 
-						
-						if ( $cs_radio_options_menu =='list'){
-							         $select_cpt = cs_get_option ('select_cpt') ? 
-												   cs_get_option ('select_cpt'): 'post';
-																					
-									 $post_type = $select_cpt;
-									 $cs_select_options = cs_get_option( 'menu_day_posts' );
-									 $the_slug = $cs_select_options;
 
-								$daypost = new WP_Query(array('post_type' => $post_type,
-															  'post_title'=> $the_slug,
-															  'posts_per_page' => 1)); 
-								}
-								
-						elseif ( $cs_radio_options_menu =='randomly' ){
-		 
-								$daypost = new WP_Query(array(
-									'post_type' => $post_type,
-									'orderby'        => 'rand',
-									'posts_per_page' => 1));
-								}
-								
-					if ( $daypost->have_posts() ) : while($daypost->have_posts()): $daypost->the_post();
-               			 $post_type = ucfirst($post_type);	?> 	
 					<div class="col-md-12 mt-1">
 						<a style="font-size:1.7em;" href="<?php the_permalink();?>"class="btn btn-secondary btn-lg">
 						<?php _e( $post_type.' of the day','larestaurante');?>
 						<i class="fa fa-commenting"></i></a>
 	 
-					<?php endwhile; ?>
+
 					<?php else:?>
 						<a style="font-size:1.7em;" onclick="alert('Sorry no matched criteria or you have no posts')" 
 							href="" 
@@ -157,7 +133,7 @@
 	  </div><!--.row align-items-start--> 
 	</div><!--container-fluid text-vcenter--> 
    </header>
-   <?php elseif( !has_header_image() && is_front_page()):?><!--if( has_header_image() && is_front_page())--> 
+   <?php if( !has_header_image() && is_front_page()):?><!--if( has_header_image() && is_front_page())-->
    <?php get_template_part('header-nomenu');?> 
    <?php endif;?>
    

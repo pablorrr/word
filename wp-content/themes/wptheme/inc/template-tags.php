@@ -210,7 +210,7 @@ function larestaurante_getCurrentPageUrl(){
 	return $pageURL;
     }
 
-add_filter('posts_where', 'larestaurante_title_like_posts_where', 10, 2);
+/*add_filter('posts_where', 'larestaurante_title_like_posts_where', 10, 2);
 
     function larestaurante_title_like_posts_where( $where, &$wp_query ) {
 	
@@ -223,7 +223,7 @@ add_filter('posts_where', 'larestaurante_title_like_posts_where', 10, 2);
         
         return $where;
     }
-	
+*/
 	/* breadcrumbs */
 	
 	function larestaurante_the_post_breadcrumb() {

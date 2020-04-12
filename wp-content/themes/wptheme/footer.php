@@ -61,8 +61,7 @@
 									<i class="fa fa-youtube"></i><?php _e('Sign in with Youtube','larestaurante');?>  
 								</a>
 							</li>
-							<?php endif;
-							      endif; //is_array or is_object ?>
+
 						</ul><!-- .social-buttons .list-unstyled -->
 			</div><!--.col-md-4--> 
 			
