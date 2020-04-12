@@ -25,78 +25,39 @@
 			<div style="margin-bottom:1em;" class="col-sm-12 col-md-4">
 				   <h2>Opening hours</h2>
 				  <ul  class="list-group list-unstyled" style="font-size:12pt;"> 
-					<li><?php echo cs_get_customize_option( 'monday');     ?></li>
-					<li><?php echo cs_get_customize_option( 'tuesday' );   ?></li>
-					<li><?php echo cs_get_customize_option( 'wednesday' ); ?></li>
-					<li><?php echo cs_get_customize_option( 'thursday' );  ?></li>
-					<li><?php echo cs_get_customize_option( 'friday' );    ?></li>
-					<li><?php echo cs_get_customize_option( 'saturday' );  ?></li>
-					<li><?php echo cs_get_customize_option( 'sunday' );    ?></li>
+
 				   </ul>
 			</div>
 		
 			<div style="margin-bottom:1em;" class="col-sm-12 col-md-4">
           		 <h2>Social media</h2>
 						<ul class="social-buttons list-unstyled">
-							<?php //first get option value  social group , next single values opt field
-								 $cs_social_get_option_group  = cs_get_option('group_social');
-								 if (is_array($cs_social_get_option_group)
-									 || is_object($cs_social_get_option_group)):
-										 
-									foreach($cs_social_get_option_group as $single ){
-										if ( !empty($single['social_twturl']))
-												$twt_url_opt_cs = $single['social_twturl'];
-										else
-											$twt_url_opt_cs = NULL;} 
-									
-									if($twt_url_opt_cs):	
-								?>
+
 							<li>
 								<a class="btn btn-block btn-social btn-twitter" 
-									href="<?php echo esc_url($twt_url_opt_cs);?>" target="_blanket">
+									href="" target="_blanket">
 									<i class="fa fa-twitter"></i><?php _e('Sign in with Twitter','larestaurante');?> 
 								</a>
 							</li>
-								<?php endif;//if($twt_url_opt_cs) 
-							    
-								    foreach($cs_social_get_option_group as $single ){
-										if ( !empty($single['social_fburl']))
-											$fb_url_opt_cs = $single['social_fburl'];
-										else
-											$fb_url_opt_cs = NULL;} 
-									if($fb_url_opt_cs):	?>
+
 							<li>
 								<a class="btn btn-block btn-social btn-facebook" 
-									href="<?php echo esc_url($fb_url_opt_cs);?>" target="_blanket">
+									href="" target="_blanket">
 									<i class="fa fa-facebook"></i>
 								<?php _e('Sign in with Facebook','larestaurante');?> 
 								</a>
 							</li>
-							<?php endif;
-							
-							        foreach($cs_social_get_option_group as $single ){
-										if ( !empty($single['social_googleplus_url']))
-											$google_url_opt_cs = $single['social_googleplus_url'];
-										else
-											$google_url_opt_cs = NULL;} 
-									if($google_url_opt_cs): ?>
+
 							<li>
-								<a class="btn btn-block btn-social btn-google" href="<?php echo esc_url($google_url_opt_cs);?>"
+								<a class="btn btn-block btn-social btn-google" href=""
 								target="_blanket">
 									<i class="fa fa-google"></i><?php _e('Sign in with Google','larestaurante');?>  
 								</a>
 							</li>
-							<?php endif;
-							
-							    foreach($cs_social_get_option_group as $single ){
-										if ( !empty($single['social_yturl']))
-											$yt_url_opt_cs = $single['social_yturl'];
-										else
-											$yt_url_opt_cs = NULL;} 
-									if($yt_url_opt_cs):?>
+
 							<li>
 								<a class="btn btn-block btn-social btn-google" 
-								href="<?php echo esc_url($yt_url_opt_cs);?>" target="_blanket">
+								href="" target="_blanket">
 									<i class="fa fa-youtube"></i><?php _e('Sign in with Youtube','larestaurante');?>  
 								</a>
 							</li>
@@ -196,25 +157,21 @@
 			</div>	
 			
 			<div class="col-sm-12 col-md-4">  		
-				<h5 style="color:beige;"><?php echo esc_html__('telephone number: ','larestaurante'); 
-				echo cs_get_customize_option( 'phone_number'); ?></h5>
+				<h5 style="color:beige;"><?php echo esc_html__('telephone number: ','larestaurante'); ?></h5>
 			</div>
 			
 		</div><!-- .row (login)-->
 
 		<div class="row justify-content-end">
 			<div class="col-sm-12 col-md-12"> 
-				  <?php if( cs_get_customize_option( 'copyright' ) == '') :?>
-				  <?php esc_attr_e('&copy;', 'larestaurante'); ?>
-				  <?php _e(date('Y')); ?>
-				  <?php elseif (cs_get_customize_option( 'copyright' ) != ''):?>
+
 					<h5>
 						<a href="<?php echo home_url('/') ?>" 
 						title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-						<?php echo cs_get_customize_option( 'copyright' ); ?>
+
 						</a>
 					</h5>
-				 <?php  endif; ?>
+
 			</div>	  
 		</div>
 <?php wp_footer();?>

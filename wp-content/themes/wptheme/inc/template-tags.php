@@ -418,48 +418,14 @@ function larestaurante_dashboard_widget_function() {
 if (! function_exists('larestaurante_add_font_styles')){
 	
  function larestaurante_add_font_styles(){
-	$google_fonts[] = cs_get_option( 'group_fonts' );
-	$google_fonts_paragraph = $google_fonts[0][1]['para_typo'];
-	$google_fonts_header = $google_fonts[0][1]['head_typo'];
-	if (!empty($google_fonts_paragraph ) && !empty($google_fonts_header) )
-	echo '<style>
-			p {font-family: ' .$google_fonts_paragraph['family']. ';}
-			h1, h2, h3, h4, h5, h6 {font-family: ' .$google_fonts_header['family']. ';}
-		</style>';
+
 		
 	}
 	add_action ('wp_head','larestaurante_add_font_styles'); 
 }
 
 /* Add to body tag layout class */
-function larestaurante_layout_class( $existing_classes ) {
-	
-	//retriving group opt value to get codestar 404 search display option switcher on/off	
-	
-				$cs_switcher_get_option_group = cs_get_option('group_basic_layout'); 
-				
-				if (is_array($cs_switcher_get_option_group) || is_object($cs_switcher_get_option_group)){
-					
-				foreach( $cs_switcher_get_option_group as $single ){$layout_opt_cs = $single['layout_radio'];}
-				
-		}
-		$layout_opt_cs =  isset ($layout_opt_cs) ? $layout_opt_cs : null;	
-		
-		if ( in_array( $layout_opt_cs, array( 'normal' ) ) )
-		$classes = array( 'default' );
-		if ( 'normal' == $layout_opt_cs )
-		$classes[] = 'default';
-		elseif ( 'bigger' == $layout_opt_cs )
-		$classes[] = 'wide'; 
-		else
-		$classes[] = $layout_opt_cs;
 
-	
-	$classes = apply_filters( 'larestaurante_layout_class', $classes, $layout_opt_cs );
-
-	return array_merge( $existing_classes, $classes );
-}
-add_filter( 'body_class', 'larestaurante_layout_class' );
 
 
 /* Redirect to Home Page after logout */
