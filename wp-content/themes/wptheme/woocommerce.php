@@ -10,7 +10,7 @@
  * @package LaRestaurante
  */
 
-get_header();?>
+get_header('woo');?>
 
 <div class="wrapper" id="woocommerce-wrapper">
 

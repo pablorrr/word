@@ -97,29 +97,10 @@
 
     <!-- end if menu posts-->
     <?php endif; ?>
-<?php endif;
-
-if (!function_exists('is_plugin_active'))
-    require_once(ABSPATH . '/wp-admin/includes/plugin.php');
-
-if (class_exists('woocommerce') && is_plugin_active('woocommerce/woocommerce.php')) {
-
-    //https://www.skyverge.com/blog/get-woocommerce-page-urls/
-    echo '<a style="font-size:1.7em;" class="btn btn-secondary btn-lg" 
-							href="' . esc_url( wc_get_cart_url() ) .'/cart/'. '" >
-							Go to your Cart<i class="fa fa-shopping-cart"></i></a>
-							<a style="font-size:1.7em;" class="btn btn-secondary btn-lg" 
-							href="' . esc_url(wc_get_page_permalink( 'shop' )) .'/shop/'.'" >Go to the Shop
-							<i class="fa fa-shopping-bag"></i></a>';
-}
-// linia 111 dodac tlumaczenie dla polskiej wersji , wstwic string 'shop'
-if (is_plugin_active('restaurant-reservations/restaurant-reservations.php')) : ?>
-    <a id="bookit" style="font-size:1.7em;" class="btn btn-secondary btn-lg">
-        <?php _e('Book a table', 'larestaurante'); ?><i class="fa fa-book"></i></a>
-    <div id="book"><?php echo do_shortcode('[booking-form]'); ?></div>
+<?php endif;?>
 
 
-<?php endif; ?>
+
 
     <p class="site-description respo"><?php echo $description; ?></p>
     <a href="#content" class="page-scroller"><i class="fa fa-fw fa-angle-down"></i></a>
@@ -132,11 +113,3 @@ if (is_plugin_active('restaurant-reservations/restaurant-reservations.php')) : ?
     </div><!--.row align-items-start-->
     </div><!--container-fluid text-vcenter-->
 </header>
-<?php if (!has_header_image() && is_front_page()): ?><!--if( has_header_image() && is_front_page())-->
-<?php get_template_part('header-nomenu'); ?>
-<?php endif; ?>
-
-<?php if (is_plugin_active('woocommerce/woocommerce.php') && !is_front_page()): ?>
-    <?php get_template_part('woo-head'); ?>
-
-<?php endif; ?>

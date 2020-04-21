@@ -11,8 +11,10 @@
  *
  * @package larestaurante
  */
-
-get_header(); ?>
+if (is_cart() || is_account_page() || is_checkout() || is_product())
+    get_header('woo');
+else
+    get_header(); ?>
     <div class="container">
 
         <div class="row mx-auto m-single">

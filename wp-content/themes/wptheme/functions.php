@@ -76,6 +76,12 @@ if ( ! class_exists( 'larestaurante_navwalker' )) {
  * Load hooks.
  */
 require get_template_directory() . '/inc/hooks.php';
+
+/**
+ * Load WooCommerce custom settings.
+ */
+require get_template_directory() . '/inc/woocommerce.php';
+
 	
 /**
  .
