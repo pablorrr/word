@@ -581,7 +581,7 @@ function custom_woocommerce_page_title( $page_title ) {
 								transform: scale(1.2) rotate(340deg);
 								}						
 							</style>';
-												echo'<ul class="product-cats">';
+												echo'<ul class="product-cats d-flex justify-content-around">';
 												foreach ( $terms as $term ) {
 													
 
