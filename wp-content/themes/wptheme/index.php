@@ -12,10 +12,10 @@
  * @package larestaurante
  */
 
-get_header('nomenu'); ?>
+get_header(); ?>
 <div id="content"  class="container">
 
-		<div class="row mx-auto m-single">
+		<div id="load-posts" class="row mx-auto m-single">
 			<section id="primary" class="content-area col-sm-12 col-md-8 col-lg-8">
 				<main id="main" class="site-main" role="main">
 
@@ -50,10 +50,7 @@ get_header('nomenu'); ?>
 
 				</main><!-- #main -->
 			</section><!-- #primary -->
-		<?php
-		//get option from metabox field placed in edit cpt -"menu" to on/off sidebar
-		$sidebar_show = get_post_meta( $post->ID, 'larestaurante_page_layout', true );
-				if ($sidebar_show !== 'no-sidebar') { get_sidebar();}?>
+		<?php get_sidebar();?>
 		</div><!--.row .mx-auto .m-single -->
 </div><!--#content-->
 		
