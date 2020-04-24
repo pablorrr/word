@@ -543,7 +543,7 @@ function custom_woocommerce_page_title( $page_title ) {
 								<i class="fa fa-shopping-cart"></i></a>';}
 						if (!is_shop()){
 								echo'<a style="font-size:1.2em;"  
-								href="'.esc_url(get_permalink(wc_get_page_id( 'shop' ) )).'" >Go to Shop page
+								href="' . esc_url(wc_get_page_permalink('shop')) . '/shop/' . '" >Go to Shop page
 								<i class="fa fa-shopping-bag"></i></a>';
 								}
 			

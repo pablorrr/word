@@ -16,11 +16,6 @@ require get_template_directory() . '/inc/setup.php';
  * Register widget area.
  */
 require get_template_directory() . '/inc/widgets.php';
-/**
- * Load custom widget.
- */
-require get_template_directory() . '/inc/custom-widget/custom-widget.php';
-
 
 /**
  * Enqueue scripts and styles.
