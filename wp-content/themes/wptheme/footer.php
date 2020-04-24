@@ -163,7 +163,8 @@
             </div>
 
             <div class="col-sm-12 col-md-4">
-                <h5 style="color:beige;"><?php echo esc_html__('telephone number: ', 'larestaurante'); ?></h5>
+                <h5 style="color:beige;"><?php echo esc_html__('telephone number: ', 'larestaurante');
+                echo get_theme_mod('tel_text_block');?></h5>
             </div>
 
         </div><!-- .row (login)-->

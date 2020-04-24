@@ -133,7 +133,7 @@ function wptheme_customize_register($wp_customize)
     // Add control
     $wp_customize->add_control(new WP_Customize_Control(
             $wp_customize,
-            'mopnday',
+            'monday',
             array(
                 'label' => __('Monday', 'wptheme'),
                 'section' => 'monday',
@@ -295,12 +295,50 @@ function wptheme_customize_register($wp_customize)
         )
     );
 
+    //telephone number
+    // Create custom panel.
+    $wp_customize->add_panel('phone_number', array(
+        'priority' => 500,
+        'theme_supports' => '',
+        'title' => __('Telephone number', 'wptheme'),
+        'description' => __('Set editable text for certain content.', 'wptheme'),
+    ));
+
+    // Add section - Monday
+    $wp_customize->add_section('tel_number', array(
+        'title' => __('Telephone number', 'wptheme'),
+        'panel' => 'phone_number',
+        'priority' => 10
+    ));
+    // Add setting
+    $wp_customize->add_setting('tel_text_block', array(
+        'default' => __('000 000 000', 'wptheme'),
+        'sanitize_callback' => 'sanitize_text'
+    ));
+    // Add control
+    $wp_customize->add_control(new WP_Customize_Control(
+            $wp_customize,
+            'tel_number',
+            array(
+                'label' => __('Phone Number', 'wptheme'),
+                'section' => 'tel_number',
+                'settings' => 'tel_text_block',
+                'type' => 'text'
+            )
+        )
+    );
+
+
+
 
     // Sanitize text
     function sanitize_text($text)
     {
         return sanitize_text_field($text);
     }
+
+
+
 
 
 }

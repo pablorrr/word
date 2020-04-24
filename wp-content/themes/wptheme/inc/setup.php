@@ -28,7 +28,7 @@ if (!function_exists('larestaurante_setup')) :
             $extras = '<div class="row mx-md-n5">
                         <div class="col px-md-5">
                             <div class="p-3 border bg-light">
-                            <a  href="' . esc_url(wc_get_cart_url()) . '" >
+                            <a  href="' . esc_url(wc_get_cart_url()).'/cart/' . '" >
                                 <i class="fa fa-shopping-cart"></i>
                                 </a>
                             </div>
