@@ -4,7 +4,7 @@
  *
  * Displays all of the <head>  and <header> section
  *
- * @package LaRestaurante
+ * @package wptheme
  */
 ?>
 
@@ -58,7 +58,7 @@
                     'menu_id' => false,
                     'menu_class' => 'navbar-nav mr-auto',
                     'depth' => 3,
-                    'walker' => new larestaurante_navwalker()
+                    'walker' => new wptheme_navwalker()
                 ));
                 ?>
             </div>
@@ -67,7 +67,7 @@
 
             <div class="container-fluid">
                 <h3>
-                    <?php printf(wp_kses(__('Theres no menu, <a href="%1$s" target="%2$s">go to 		admin 	panel and create and activate menu</a>.', 'larestaurante'),
+                    <?php printf(wp_kses(__('Theres no menu, <a href="%1$s" target="%2$s">go to 		admin 	panel and create and activate menu</a>.', 'wptheme'),
                         array('a' => array('href' => array(), 'target' => array()))),
                         admin_url('nav-menus.php'), '_blank'); ?>
                 </h3>

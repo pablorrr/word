@@ -27,46 +27,46 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php if ( $order->has_status( 'failed' ) ) : ?>
 
-			<p class="woocommerce-notice woocommerce-notice--error woocommerce-thankyou-order-failed"><?php _e( 'Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction. Please attempt your purchase again.', 'larestaurante' ); ?></p>
+			<p class="woocommerce-notice woocommerce-notice--error woocommerce-thankyou-order-failed"><?php _e( 'Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction. Please attempt your purchase again.', 'wptheme' ); ?></p>
 
 			<p class="woocommerce-notice woocommerce-notice--error woocommerce-thankyou-order-failed-actions">
-				<a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" class="button pay"><?php _e( 'Pay', 'larestaurante' ) ?></a>
+				<a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" class="button pay"><?php _e( 'Pay', 'wptheme' ) ?></a>
 				<?php if ( is_user_logged_in() ) : ?>
-					<a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="button pay"><?php _e( 'My account', 'larestaurante' ); ?></a>
+					<a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="button pay"><?php _e( 'My account', 'wptheme' ); ?></a>
 				<?php endif; ?>
 			</p>
 
 		<?php else : ?>
 
-			<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'larestaurante' ), $order ); ?></p>
+			<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'wptheme' ), $order ); ?></p>
 
 			<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details">
 
 				<li class="woocommerce-order-overview__order order">
-					<?php _e( 'Order number:', 'larestaurante' ); ?>
+					<?php _e( 'Order number:', 'wptheme' ); ?>
 					<strong><?php echo $order->get_order_number(); ?></strong>
 				</li>
 
 				<li class="woocommerce-order-overview__date date">
-					<?php _e( 'Date:', 'larestaurante' ); ?>
+					<?php _e( 'Date:', 'wptheme' ); ?>
 					<strong><?php echo wc_format_datetime( $order->get_date_created() ); ?></strong>
 				</li>
 
 				<?php if ( is_user_logged_in() && $order->get_user_id() === get_current_user_id() && $order->get_billing_email() ) : ?>
 					<li class="woocommerce-order-overview__email email">
-						<?php _e( 'Email:', 'larestaurante' ); ?>
+						<?php _e( 'Email:', 'wptheme' ); ?>
 						<strong><?php echo $order->get_billing_email(); ?></strong>
 					</li>
 				<?php endif; ?>
 
 				<li class="woocommerce-order-overview__total total">
-					<?php _e( 'Total:', 'larestaurante' ); ?>
+					<?php _e( 'Total:', 'wptheme' ); ?>
 					<strong><?php echo $order->get_formatted_order_total(); ?></strong>
 				</li>
 
 				<?php if ( $order->get_payment_method_title() ) : ?>
 					<li class="woocommerce-order-overview__payment-method method">
-						<?php _e( 'Payment method:', 'larestaurante' ); ?>
+						<?php _e( 'Payment method:', 'wptheme' ); ?>
 						<strong><?php echo wp_kses_post( $order->get_payment_method_title() ); ?></strong>
 					</li>
 				<?php endif; ?>
@@ -80,7 +80,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php else : ?>
 
-		<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'larestaurante' ), null ); ?></p>
+		<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'wptheme' ), null ); ?></p>
 
 	<?php endif; ?>
 

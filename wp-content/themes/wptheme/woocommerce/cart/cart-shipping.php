@@ -47,13 +47,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php elseif ( WC()->customer->has_calculated_shipping() ) : ?>
 			<?php
 				if ( is_cart() ) {
-					echo apply_filters( 'woocommerce_cart_no_shipping_available_html', wpautop( __( 'There are no shipping methods available. Please ensure that your address has been entered correctly, or contact us if you need any help.', 'larestaurante' ) ) );
+					echo apply_filters( 'woocommerce_cart_no_shipping_available_html', wpautop( __( 'There are no shipping methods available. Please ensure that your address has been entered correctly, or contact us if you need any help.', 'wptheme' ) ) );
 				} else {
-					echo apply_filters( 'woocommerce_no_shipping_available_html', wpautop( __( 'There are no shipping methods available. Please ensure that your address has been entered correctly, or contact us if you need any help.', 'larestaurante' ) ) );
+					echo apply_filters( 'woocommerce_no_shipping_available_html', wpautop( __( 'There are no shipping methods available. Please ensure that your address has been entered correctly, or contact us if you need any help.', 'wptheme' ) ) );
 				}
 			?>
 		<?php elseif ( ! is_cart() ) : ?>
-			<?php echo wpautop( __( 'Enter your full address to see shipping costs.', 'larestaurante' ) ); ?>
+			<?php echo wpautop( __( 'Enter your full address to see shipping costs.', 'wptheme' ) ); ?>
 		<?php endif; ?>
 
 		<?php if ( $show_package_details ) : ?>

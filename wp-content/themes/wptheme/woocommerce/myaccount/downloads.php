@@ -38,9 +38,9 @@ do_action( 'woocommerce_before_account_downloads', $has_downloads ); ?>
 <?php else : ?>
 	<div class="woocommerce-Message woocommerce-Message--info woocommerce-info">
 		<a class="woocommerce-Button button" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
-			<?php esc_html_e( 'Go shop', 'larestaurante' ) ?>
+			<?php esc_html_e( 'Go shop', 'wptheme' ) ?>
 		</a>
-		<?php esc_html_e( 'No downloads available yet.', 'larestaurante' ); ?>
+		<?php esc_html_e( 'No downloads available yet.', 'wptheme' ); ?>
 	</div>
 <?php endif; ?>
 

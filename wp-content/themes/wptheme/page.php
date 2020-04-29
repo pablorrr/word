@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package larestaurante
+ * @package wptheme
  */
 if (is_cart() || is_account_page() || is_checkout() || is_product())
     get_header('woo');

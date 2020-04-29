@@ -2,7 +2,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: LaRestaurante\n"
+"Project-Id-Version: wptheme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-09 15:31+0200\n"
 "PO-Revision-Date: \n"
@@ -416,15 +416,15 @@ msgstr ""
 msgid "Footer 3"
 msgstr ""
 
-#: inc/admin/larestaurante-welcome-screen.php:47
+#: inc/admin/wptheme-welcome-screen.php:47
 #, php-format
 msgid ""
-"Thanks for choosing LaRestaurante! Learn how to get the most out of your "
+"Thanks for choosing wptheme! Learn how to get the most out of your "
 "new theme on the %swelcome screen%s."
 msgstr ""
 
-#: inc/admin/larestaurante-welcome-screen.php:48
-msgid "Get started with LaRestaurante"
+#: inc/admin/wptheme-welcome-screen.php:48
+msgid "Get started with wptheme"
 msgstr ""
 
 #: inc/admin/contact-form/contact-form.php:134
@@ -674,7 +674,7 @@ msgstr ""
 
 #: inc/admin/sections/lets-started.php:15
 #, php-format
-msgid "Welcome to the %sLaRestaurante%s Theme , enjoy it!!!"
+msgid "Welcome to the %swptheme%s Theme , enjoy it!!!"
 msgstr ""
 
 #: inc/admin/sections/lets-started.php:16
@@ -789,7 +789,7 @@ msgstr ""
 #, php-format
 msgid ""
 "Add to the subject plugins supporting take care of seo, security and "
-"\tinform users that you are using cookie in %sLaRestaurante%s"
+"\tinform users that you are using cookie in %swptheme%s"
 msgstr ""
 
 #: inc/admin/sections/plugin-support.php:18

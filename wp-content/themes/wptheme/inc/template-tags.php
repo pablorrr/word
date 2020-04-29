@@ -4,15 +4,15 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package LaRestaurante
+ * @package wptheme
  */
 
-if ( ! function_exists( 'larestaurante_posted_on' ) ) :
+if ( ! function_exists( 'wptheme_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  * Function is invoking in content files located in Template Parts folder
  */
-function larestaurante_posted_on() {
+function wptheme_posted_on() {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
         $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
@@ -24,12 +24,12 @@ function larestaurante_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'larestaurante' ),
+		esc_html_x( 'Posted on %s', 'post date', 'wptheme' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
-		esc_html_x( 'by %s', 'post author', 'larestaurante' ),
+		esc_html_x( 'by %s', 'post author', 'wptheme' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
@@ -39,30 +39,30 @@ function larestaurante_posted_on() {
     if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
         echo ' | <span class="comments-link"><i class="fa fa-comments" aria-hidden="true"></i> ';
         /* translators: %s: post title */
-        comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'larestaurante' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
+        comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'wptheme' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
         echo '</span>';
     }
 
 }
 endif;
 
-if ( ! function_exists( 'larestaurante_entry_footer' ) ) :
+if ( ! function_exists( 'wptheme_entry_footer' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.
  */
-function larestaurante_entry_footer() {
+function wptheme_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( esc_html__( ', ', 'larestaurante' ) );
-		if ( $categories_list && larestaurante_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'larestaurante' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+		$categories_list = get_the_category_list( esc_html__( ', ', 'wptheme' ) );
+		if ( $categories_list && wptheme_categorized_blog() ) {
+			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'wptheme' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'larestaurante' ) );
+		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'wptheme' ) );
 		if ( $tags_list ) {
-			printf( ' | <span class="tags-links">' . esc_html__( 'Tagged %1$s', 'larestaurante' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( ' | <span class="tags-links">' . esc_html__( 'Tagged %1$s', 'wptheme' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
 	}
 
@@ -70,7 +70,7 @@ function larestaurante_entry_footer() {
 	edit_post_link(
 		sprintf(
 			/* translators: %s: Name of current post */
-			esc_html__( 'Edit %s', 'larestaurante' ),
+			esc_html__( 'Edit %s', 'wptheme' ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		),
 		' | <span class="edit-link">',
@@ -84,8 +84,8 @@ endif;
  *
  * @return bool
  */
-function larestaurante_categorized_blog() {
-	if ( false === ( $all_the_cool_cats = get_transient( 'larestaurante_categories' ) ) ) {
+function wptheme_categorized_blog() {
+	if ( false === ( $all_the_cool_cats = get_transient( 'wptheme_categories' ) ) ) {
 		// Create an array of all the categories that are attached to posts.
 		$all_the_cool_cats = get_categories( array(
 			'fields'     => 'ids',
@@ -97,7 +97,7 @@ function larestaurante_categorized_blog() {
 		// Count the number of categories that are attached to the posts.
 		$all_the_cool_cats = count( $all_the_cool_cats );
 
-		set_transient( 'larestaurante_categories', $all_the_cool_cats );
+		set_transient( 'wptheme_categories', $all_the_cool_cats );
 	}
 
 	if ( $all_the_cool_cats > 1 ) {
@@ -110,21 +110,21 @@ function larestaurante_categorized_blog() {
 }
 
 /**
- * Flush out the transients used in larestaurante_categorized_blog.
+ * Flush out the transients used in wptheme_categorized_blog.
  */
-function larestaurante_category_transient_flusher() {
+function wptheme_category_transient_flusher() {
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 		return;
 	}
 	// Like, beat it. Dig?
-	delete_transient( 'larestaurante_categories' );
+	delete_transient( 'wptheme_categories' );
 }
-add_action( 'edit_category', 'larestaurante_category_transient_flusher' );
-add_action( 'save_post',     'larestaurante_category_transient_flusher' );
+add_action( 'edit_category', 'wptheme_category_transient_flusher' );
+add_action( 'save_post',     'wptheme_category_transient_flusher' );
 
 
 
-if ( ! function_exists( 'larestaurante_comments_feed_template_callback' ) ) :
+if ( ! function_exists( 'wptheme_comments_feed_template_callback' ) ) :
     /**
      * Template for comments and pingbacks.
      *
@@ -132,7 +132,7 @@ if ( ! function_exists( 'larestaurante_comments_feed_template_callback' ) ) :
      */
     /* comments form callback function */
 	
-function larestaurante_comments_feed_template_callback($comment, $args, $depth) {
+function wptheme_comments_feed_template_callback($comment, $args, $depth) {
 
   $GLOBAL['comment'] = $comment;
 
@@ -147,7 +147,7 @@ function larestaurante_comments_feed_template_callback($comment, $args, $depth) 
 		<br>
         <?php comment_text(); ?>
         <?php comment_reply_link(array_merge($args, array(
-		  'reply_text' => __('<strong class="btn-lg fr-end-butt">Answer </strong><i class="icon-share-alt"></i>','larestaurante'),
+		  'reply_text' => __('<strong class="btn-lg fr-end-butt">Answer </strong><i class="icon-share-alt"></i>','wptheme'),
           'depth' => $depth,
           'max_depth' => $args['max_depth']
         ))); ?>
@@ -162,7 +162,7 @@ endif;
 /* for archive searching */
 
 
-function larestaurante_getQueryParams(){
+function wptheme_getQueryParams(){
 	
         global $query_string;
 		$parts = explode('&', $query_string);
@@ -180,8 +180,8 @@ function larestaurante_getQueryParams(){
     }  
 
 
-function larestaurante_getQuerySingleParam($name){
-        $qparams = larestaurante_getQueryParams();
+function wptheme_getQuerySingleParam($name){
+        $qparams = wptheme_getQueryParams();
         
         if(isset($qparams[$name])){
             return $qparams[$name];
@@ -190,7 +190,7 @@ function larestaurante_getQuerySingleParam($name){
         return NULL;
     }
 
-function larestaurante_getCurrentPageUrl(){
+function wptheme_getCurrentPageUrl(){
 	
      $pageURL = 'http';
      if(isset($_SERVER["HTTPS"])){
@@ -210,9 +210,9 @@ function larestaurante_getCurrentPageUrl(){
 	return $pageURL;
     }
 
-/*add_filter('posts_where', 'larestaurante_title_like_posts_where', 10, 2);
+/*add_filter('posts_where', 'wptheme_title_like_posts_where', 10, 2);
 
-    function larestaurante_title_like_posts_where( $where, &$wp_query ) {
+    function wptheme_title_like_posts_where( $where, &$wp_query ) {
 	
         global $wpdb;
         
@@ -226,11 +226,11 @@ function larestaurante_getCurrentPageUrl(){
 */
 	/* breadcrumbs */
 	
-	function larestaurante_the_post_breadcrumb() {
+	function wptheme_the_post_breadcrumb() {
 		global $post;
 		echo '<ol class="breadcrumb">';
 		echo '<li>';
-		echo '<a href="'.home_url().'">'.__('main','larestaurante').'</a>';
+		echo '<a href="'.home_url().'">'.__('main','wptheme').'</a>';
 		echo '</li>';
 		
 		$post_type_name = get_post_type();
@@ -267,12 +267,12 @@ function larestaurante_getCurrentPageUrl(){
 
 
 
-function larestaurante_the_excerpt_max_charlength($charlength) {
-		echo larestaurante_cutText(get_the_excerpt(), $charlength);
+function wptheme_the_excerpt_max_charlength($charlength) {
+		echo wptheme_cutText(get_the_excerpt(), $charlength);
 	}
 
 
-    function larestaurante_cutText($text, $maxLength){
+    function wptheme_cutText($text, $maxLength){
         
         $maxLength++;
 
@@ -301,7 +301,7 @@ function larestaurante_the_excerpt_max_charlength($charlength) {
     }
 
 /* Function is used in Opinion Segment */
-function larestaurante_fetchRecentComments($limit = 3) {
+function wptheme_fetchRecentComments($limit = 3) {
 
 	 global $wpdb;
         
@@ -321,17 +321,17 @@ function larestaurante_fetchRecentComments($limit = 3) {
 }
 
 /* Modify link class into Bootstrap classs */
-add_filter('comment_reply_link', 'larestaurante_add_reply_link_class');
+add_filter('comment_reply_link', 'wptheme_add_reply_link_class');
 
-function larestaurante_add_reply_link_class($class) {
+function wptheme_add_reply_link_class($class) {
   $class = str_replace("class='comment-reply-link", "class='btn btn-default pull-right", $class);
   return $class;
 }
 
-add_filter( 'preprocess_comment', 'larestaurante_comment_limitation' );
+add_filter( 'preprocess_comment', 'wptheme_comment_limitation' );
 
 /* limit comments char */
-function larestaurante_comment_limitation($comment) {
+function wptheme_comment_limitation($comment) {
     if ( strlen( $comment['comment_content'] ) > 800 ) {
         wp_die('Comment is too long. Please keep your comment under 250 characters.');
     }
@@ -342,24 +342,24 @@ if ( strlen( $comment['comment_content'] ) < 60 ) {
 }
 
 /* password protection for protected posts */
-function larestaurante_password_form() {
+function wptheme_password_form() {
     global $post;
     $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
     $o = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
-    <div class="d-block mb-3">' . __( "To view this protected post, enter the password below:", "larestaurante" ) . '</div>
-    <div class="form-group form-inline"><label for="' . $label . '" class="mr-2">' . __( "Password:", "larestaurante" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" class="form-control mr-2" /> <input type="submit" name="Submit" value="' . esc_attr__( "Submit", "larestaurante" ) . '" class="btn btn-primary"/></div>
+    <div class="d-block mb-3">' . __( "To view this protected post, enter the password below:", "wptheme" ) . '</div>
+    <div class="form-group form-inline"><label for="' . $label . '" class="mr-2">' . __( "Password:", "wptheme" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" class="form-control mr-2" /> <input type="submit" name="Submit" value="' . esc_attr__( "Submit", "wptheme" ) . '" class="btn btn-primary"/></div>
     </form>';
     return $o;
 }
-add_filter( 'the_password_form', 'larestaurante_password_form' );
+add_filter( 'the_password_form', 'wptheme_password_form' );
 
 /* https://codex.wordpress.org/Dashboard_Widgets_API */
 
-function larestaurante_dashboard_widget() {
+function wptheme_dashboard_widget() {
  	wp_add_dashboard_widget(
-							'larestaurante_dashboard_widget',// Widget slug.
-							'Larestaurante Dashboard Widget',// Title.
-							'larestaurante_dashboard_widget_function'// Display function.
+							'wptheme_dashboard_widget',// Widget slug.
+							'wptheme Dashboard Widget',// Title.
+							'wptheme_dashboard_widget_function'// Display function.
 							);
  	
  	
@@ -373,7 +373,7 @@ function larestaurante_dashboard_widget() {
  	// Backup and delete our new dashboard widget from the end of the array
 	
  
- 	$culinary_widget_backup = array( 'larestaurante_dashboard_widget' => $normal_dashboard['larestaurante_dashboard_widget'] );
+ 	$culinary_widget_backup = array( 'wptheme_dashboard_widget' => $normal_dashboard['wptheme_dashboard_widget'] );
  	unset( $normal_dashboard['culinary_dashboard_widget'] );
  
  	// Merge the two arrays together so our widget is at the beginning
@@ -388,12 +388,12 @@ function larestaurante_dashboard_widget() {
 	
 	
 } 
-add_action( 'wp_dashboard_setup', 'larestaurante_dashboard_widget' );
+add_action( 'wp_dashboard_setup', 'wptheme_dashboard_widget' );
 
 /**
  * Create the function to output the contents of our Dashboard Widget.
  */
-function larestaurante_dashboard_widget_function() {
+function wptheme_dashboard_widget_function() {
 
 	
 	echo "Welcome Restaurant Culinary Theme , enjoy it!!! <br>
@@ -415,13 +415,13 @@ function larestaurante_dashboard_widget_function() {
 }
 
 /* add font styles , Google Fonts Supporting*/
-if (! function_exists('larestaurante_add_font_styles')){
+if (! function_exists('wptheme_add_font_styles')){
 	
- function larestaurante_add_font_styles(){
+ function wptheme_add_font_styles(){
 
 		
 	}
-	add_action ('wp_head','larestaurante_add_font_styles'); 
+	add_action ('wp_head','wptheme_add_font_styles'); 
 }
 
 /* Add to body tag layout class */
@@ -429,16 +429,16 @@ if (! function_exists('larestaurante_add_font_styles')){
 
 
 /* Redirect to Home Page after logout */
-add_action( 'wp_logout', 'larestaurante_auto_redirect_external_after_logout');
+add_action( 'wp_logout', 'wptheme_auto_redirect_external_after_logout');
 
-function larestaurante_auto_redirect_external_after_logout(){
+function wptheme_auto_redirect_external_after_logout(){
 		wp_redirect( home_url() );
 		exit();
 		}
 		
 		
 /* Add to menu class to scroll page with menu */
-function larestaurante_add_specific_menu_location_atts( $atts, $item, $args ) {
+function wptheme_add_specific_menu_location_atts( $atts, $item, $args ) {
     // check if the item is in the primary menu
     if( $args->theme_location == 'primary' ) {
       // add the desired attributes:
@@ -446,7 +446,7 @@ function larestaurante_add_specific_menu_location_atts( $atts, $item, $args ) {
     }
     return $atts;
 }
-add_filter( 'nav_menu_link_attributes', 'larestaurante_add_specific_menu_location_atts', 10, 3 );	
+add_filter( 'nav_menu_link_attributes', 'wptheme_add_specific_menu_location_atts', 10, 3 );	
 
 /* svg support */
 /* source :https://codex.wordpress.org/Plugin_API/Filter_Reference/upload_mimes */

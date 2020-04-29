@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package LaRestaurante
+ * @package wptheme
  */
 
 ?>
@@ -21,7 +21,7 @@
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'larestaurante' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wptheme' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -33,7 +33,7 @@
 				edit_post_link(
 					sprintf(
 						/* translators: %s: Name of current post */
-						esc_html__( 'Edit %s', 'larestaurante' ),
+						esc_html__( 'Edit %s', 'wptheme' ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					),
 					'<span class="edit-link">',

@@ -10,10 +10,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $my_orders_columns = apply_filters( 'woocommerce_my_account_my_orders_columns', array(
-	'order-number'  => __( 'Order', 'larestaurante' ),
-	'order-date'    => __( 'Date', 'larestaurante' ),
-	'order-status'  => __( 'Status', 'larestaurante' ),
-	'order-total'   => __( 'Total', 'larestaurante' ),
+	'order-number'  => __( 'Order', 'wptheme' ),
+	'order-date'    => __( 'Date', 'wptheme' ),
+	'order-status'  => __( 'Status', 'wptheme' ),
+	'order-total'   => __( 'Total', 'wptheme' ),
 	'order-actions' => '&nbsp;',
 ) );
 
@@ -27,7 +27,7 @@ $customer_orders = get_posts( apply_filters( 'woocommerce_my_account_my_orders_q
 
 if ( $customer_orders ) : ?>
 
-	<h2><?php echo apply_filters( 'woocommerce_my_account_my_orders_title', __( 'Recent orders', 'larestaurante' ) ); ?></h2>
+	<h2><?php echo apply_filters( 'woocommerce_my_account_my_orders_title', __( 'Recent orders', 'wptheme' ) ); ?></h2>
 
 	<table class="shop_table shop_table_responsive my_account_orders">
 
@@ -52,7 +52,7 @@ if ( $customer_orders ) : ?>
 
 							<?php elseif ( 'order-number' === $column_id ) : ?>
 								<a href="<?php echo esc_url( $order->get_view_order_url() ); ?>">
-									<?php echo _x( '#', 'hash before order number', 'larestaurante' ) . $order->get_order_number(); ?>
+									<?php echo _x( '#', 'hash before order number', 'wptheme' ) . $order->get_order_number(); ?>
 								</a>
 
 							<?php elseif ( 'order-date' === $column_id ) : ?>

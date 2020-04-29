@@ -2,7 +2,7 @@
 /**
  * Welcome screen add-ons template
  */
-$formatted_string = wpautop('LaRestaurante is a:
+$formatted_string = wpautop('wptheme is a:
 													- responsive ( Bootsrap 4 framework ),
 													- customizable ( Wp Customizer),
 													- translatable,
@@ -46,7 +46,7 @@ $formatted_string = wpautop('LaRestaurante is a:
 									License URI:http://www.gnu.org/licenses/gpl-2.0.html'); ?>
 
 <div id="add_on" class="add-ons panel" style="padding-top: 1.618em; clear: both;">
-    <h2><?php echo esc_html__('Read documentation', 'larestaurante'); ?></h2>
+    <h2><?php echo esc_html__('Read documentation', 'wptheme'); ?></h2>
 
     <p class="tagline">
         <?php echo $formatted_string; ?>

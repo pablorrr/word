@@ -1,5 +1,5 @@
 <?php
-if (!function_exists('larestaurante_setup')) :
+if (!function_exists('wptheme_setup')) :
     /**
      * Sets up theme defaults and registers support for various WordPress features.
      *
@@ -46,17 +46,17 @@ if (!function_exists('larestaurante_setup')) :
     }
 
     add_filter('wp_nav_menu', 'be_menu_extras', 10, 2);
-    function larestaurante_setup()
+    function wptheme_setup()
     {
         /*
          * Make theme available for translation.
          * Translations can be filed in the /languages/ directory.
          * If you're building a theme based on WP Bootstrap Starter, use a find and replace
-         * to change 'larestaurante' to the name of your theme in all the template files.
+         * to change 'wptheme' to the name of your theme in all the template files.
          *
          */
 
-        load_theme_textdomain('larestaurante', get_template_directory() . '/lang');
+        load_theme_textdomain('wptheme', get_template_directory() . '/lang');
 
         // Add default posts and comments RSS feed links to head.
         add_theme_support('automatic-feed-links');
@@ -80,7 +80,7 @@ if (!function_exists('larestaurante_setup')) :
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(array(
-            'primary' => esc_html__('primary', 'larestaurante'),
+            'primary' => esc_html__('primary', 'wptheme'),
         ));
 
         /*
@@ -96,7 +96,7 @@ if (!function_exists('larestaurante_setup')) :
 
 
         // Set up the WordPress core custom background feature.
-        add_theme_support('custom-background', apply_filters('larestaurante_custom_background_args', array(
+        add_theme_support('custom-background', apply_filters('wptheme_custom_background_args', array(
             'default-color' => '',
             'default-image' => '',
         )));
@@ -104,24 +104,24 @@ if (!function_exists('larestaurante_setup')) :
         // Add theme support for selective refresh for widgets.
         add_theme_support('customize-selective-refresh-widgets');
 
-        function larestaurante_add_editor_styles()
+        function wptheme_add_editor_styles()
         {
             add_editor_style('custom-editor-style.css');
         }
 
-        add_action('admin_init', 'larestaurante_add_editor_styles');
+        add_action('admin_init', 'wptheme_add_editor_styles');
 
         // Redirect to welcome page after activation theme
         global $pagenow;
 
         if (is_admin() && 'themes.php' == $pagenow && isset($_GET['activated'])) {
-            wp_redirect(admin_url('themes.php?page=larestaurante-welcome'));
+            wp_redirect(admin_url('themes.php?page=wptheme-welcome'));
         }
     }
 
 
 endif;
-add_action('after_setup_theme', 'larestaurante_setup');
+add_action('after_setup_theme', 'wptheme_setup');
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -130,10 +130,10 @@ add_action('after_setup_theme', 'larestaurante_setup');
  *
  * @global int $content_width
  */
-function larestaurante_content_width()
+function wptheme_content_width()
 {
-    $GLOBALS['content_width'] = apply_filters('larestaurante_content_width', 1170);
+    $GLOBALS['content_width'] = apply_filters('wptheme_content_width', 1170);
 }
 
-add_action('after_setup_theme', 'larestaurante_content_width', 0);
+add_action('after_setup_theme', 'wptheme_content_width', 0);
 ?>

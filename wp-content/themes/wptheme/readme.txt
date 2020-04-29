@@ -1,4 +1,4 @@
-LaRestaurante is a:
+wptheme is a:
 - responsive ( Bootsrap 4 framework ),
 - customizable ( Wp Customizer,Codestar Framework ),
 - translatable,

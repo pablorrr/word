@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package larestaurante
+ * @package wptheme
  */
 
 get_header(); ?>
@@ -17,7 +17,7 @@ get_header(); ?>
 				<?php if ( have_posts() ) : ?>
 
 					<header class="page-header">
-						<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'larestaurante' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+						<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'wptheme' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 					</header><!-- .page-header -->
 
 					<?php

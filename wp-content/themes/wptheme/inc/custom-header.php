@@ -8,7 +8,7 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package larestaurante
+ * @package wptheme
  */
 
 /**
@@ -16,15 +16,15 @@
  *
  * 
  */
-function larestaurante_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'larestaurante_custom_header_args', array(
+function wptheme_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'wptheme_custom_header_args', array(
 	
 		'default-image'          => get_template_directory_uri() . '/img/about-us-1.jpg', 
 		'default-text-color'     => 'fff',
 		'width'                  => 2500,
 		'height'                 => 2000,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'larestaurante_header_style',
+		'wp-head-callback'       => 'wptheme_header_style',
 	) ) );
 	
    add_theme_support( 'custom-logo', array(
@@ -34,16 +34,16 @@ function larestaurante_custom_header_setup() {
 	   'header-text' => array( 'site-title'),
 	   ) );
 }
-add_action( 'after_setup_theme', 'larestaurante_custom_header_setup' );
+add_action( 'after_setup_theme', 'wptheme_custom_header_setup' );
 
-if ( ! function_exists( 'larestaurante_header_style' ) ) :
+if ( ! function_exists( 'wptheme_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog.
  *
  * 
  */
  
-function larestaurante_header_style() {
+function wptheme_header_style() {
 	
 	$header_text_color = get_header_textcolor();
 	$header_background_color = get_theme_mod( 'header_background_color', 'default' );
@@ -85,11 +85,11 @@ function larestaurante_header_style() {
 	</style>
 <?php }
 
-endif;//if ( ! function_exists( 'larestaurante_header_style' ) ) :
+endif;//if ( ! function_exists( 'wptheme_header_style' ) ) :
 
-if ( ! function_exists( 'larestaurante_header_background_color_css' ) ) :
+if ( ! function_exists( 'wptheme_header_background_color_css' ) ) :
 
-function larestaurante_header_background_color_css() {
+function wptheme_header_background_color_css() {
 
 	$header_background_color = get_theme_mod( 'header_background_color', '#fff' );
 	?>
@@ -109,6 +109,6 @@ function larestaurante_header_background_color_css() {
 	
 <?php   }
 
-add_action( 'wp_head', 'larestaurante_header_background_color_css');
+add_action( 'wp_head', 'wptheme_header_background_color_css');
 endif;
 ?>

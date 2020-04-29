@@ -56,8 +56,8 @@ require get_template_directory() . '/inc/shortcodes.php';
 /**
  * Load custom WordPress nav walker.
  */
-if ( ! class_exists( 'larestaurante_navwalker' )) {
-    require_once(get_template_directory() . '/inc/larestaurante-navwalker.php');
+if ( ! class_exists( 'wptheme_navwalker' )) {
+    require_once(get_template_directory() . '/inc/wptheme-navwalker.php');
 }	
 
 /**
@@ -103,5 +103,5 @@ require get_template_directory() . '/inc/tgm-register-plugin.php';
  * Show Welcome screen on activation
 */
 if ( is_admin() ) {
-	require get_template_directory() . '/inc/admin/larestaurante-welcome-screen.php';
+	require get_template_directory() . '/inc/admin/wptheme-welcome-screen.php';
 }

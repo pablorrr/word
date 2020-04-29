@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Taxonomies
  *
- * @package larestaurante
+ * @package wptheme
  *
  */
 get_header(); ?>
@@ -24,7 +24,7 @@ get_header(); ?>
                     <?php else: ?>
                         <div class="col-md-12">
                             <h2 style="padding:100px;">
-                                <?php _e('Sorry, there are no posts in this category', 'larestaurante'); ?></h2>
+                                <?php _e('Sorry, there are no posts in this category', 'wptheme'); ?></h2>
                         </div>
                     <?php endif; ?>
                 </div>

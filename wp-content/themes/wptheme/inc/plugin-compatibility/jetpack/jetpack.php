@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package larestaurante
+ * @package wptheme
  */
 
 /**
@@ -15,11 +15,11 @@
  */
  
 
-function larestaurante_jetpack_setup() {
+function wptheme_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'load-posts',
-		'render'    => 'larestaurante_infinite_scroll_render',
+		'render'    => 'wptheme_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -27,13 +27,13 @@ function larestaurante_jetpack_setup() {
 	add_theme_support( 'jetpack-responsive-videos' );
 }
 
-add_action( 'after_setup_theme', 'larestaurante_jetpack_setup' );
+add_action( 'after_setup_theme', 'wptheme_jetpack_setup' );
 
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function larestaurante_infinite_scroll_render() {
+function wptheme_infinite_scroll_render() {
 	
 	while ( have_posts() ) {
 		the_post();

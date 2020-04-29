@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/template-files-section/post-template-files/
  *
- * @package larestaurante
+ * @package wptheme
  *
  */
 
@@ -23,7 +23,7 @@ get_header(); ?>
                             comments_template('', true);
                         } elseif (is_user_logged_in()) {
 
-                            printf(wp_kses(__('Comments are disabled go to admin panel to change it,you can also check settings->discuss or if your custom post type supports comments <a href="%1$s" target="%2$s">enable comments please here</a>.', 'larestaurante'),
+                            printf(wp_kses(__('Comments are disabled go to admin panel to change it,you can also check settings->discuss or if your custom post type supports comments <a href="%1$s" target="%2$s">enable comments please here</a>.', 'wptheme'),
                                 array('a' => array('href' => array(), 'target' => array()))),
                                 esc_url(admin_url('themes.php?page=lares')), '_blank');
                         } ?>

@@ -21,4 +21,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-<p class="woocommerce-info"><?php _e( 'No products were found matching your selection.', 'larestaurante' ); ?></p>
+<p class="woocommerce-info"><?php _e( 'No products were found matching your selection.', 'wptheme' ); ?></p>

@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.Based on Understrap Starter.
  *
- * @package LaRestaurante
+ * @package wptheme
  */
 
 get_header('woo'); ?>

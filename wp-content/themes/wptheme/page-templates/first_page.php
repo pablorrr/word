@@ -7,10 +7,10 @@
 
 
 get_header();
-do_action('larestaurante_before_content');
+do_action('wptheme_before_content');
 ?>
 
-    <div id="load-posts" class="container larestaurante-posts-container">
+    <div id="load-posts" class="container wptheme-posts-container">
         <div id="content" class="row">
             <div class="col-md-12">
                 <?php
@@ -35,5 +35,5 @@ do_action('larestaurante_before_content');
     </div><!--#load-post .container -->
 
 
-<?php do_action('larestaurante_after_content'); ?>
+<?php do_action('wptheme_after_content'); ?>
 <?php get_footer(); ?>

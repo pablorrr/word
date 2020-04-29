@@ -5,7 +5,7 @@
  * The template for displaying footer
  * @link https://codex.wordpress.org/Stepping_Into_Templates
  *
- * @package LaRestaurante
+ * @package wptheme
  */
 
 ?>
@@ -47,7 +47,7 @@
                     <li>
                         <a class="btn btn-block btn-social btn-twitter"
                            href="https://twitter.com/explore" target="_blanket">
-                            <i class="fa fa-twitter"></i><?php _e('Sign in with Twitter', 'larestaurante'); ?>
+                            <i class="fa fa-twitter"></i><?php _e('Sign in with Twitter', 'wptheme'); ?>
                         </a>
                     </li>
 
@@ -55,7 +55,7 @@
                         <a class="btn btn-block btn-social btn-facebook"
                            href="https://pl-pl.facebook.com/" target="_blanket">
                             <i class="fa fa-facebook"></i>
-                            <?php _e('Sign in with Facebook', 'larestaurante'); ?>
+                            <?php _e('Sign in with Facebook', 'wptheme'); ?>
                         </a>
                     </li>
 
@@ -63,7 +63,7 @@
                     <li>
                         <a class="btn btn-block btn-social btn-google"
                            href="https://www.youtube.com/" target="_blanket">
-                            <i class="fa fa-youtube"></i><?php _e('Sign in with Youtube', 'larestaurante'); ?>
+                            <i class="fa fa-youtube"></i><?php _e('Sign in with Youtube', 'wptheme'); ?>
                         </a>
                     </li>
 
@@ -80,7 +80,7 @@
                     $first_tax = !empty($taxonomies[0]) ? $taxonomies[0] : 'category';
                     $second_tax = !empty($taxonomies[1]) ? $taxonomies[1] : 'post_tag'; ?>
 
-                    <h2><?php _e('Popular tags and categories', 'larestaurante'); ?></h2>
+                    <h2><?php _e('Popular tags and categories', 'wptheme'); ?></h2>
                     <ul class="list-group list-unstyled tagcloud">
                         <li class="list-group-item">
                             <?php //display Wordpress Tag Cloud
@@ -143,19 +143,19 @@
                 <?php if (((!is_user_logged_in()) && (is_front_page())) || ((!is_user_logged_in())
                         && (is_single()))): ?>
                     <h5><a href="<?php echo wp_login_url(home_url()); ?>" title="Login">
-                            <?php _e('Log in', 'larestaurante'); ?></a></h5>
+                            <?php _e('Log in', 'wptheme'); ?></a></h5>
 
                 <?php else: ?>
                     <ul class="list-inline">
                         <li>
                             <h5>
-                                <a href="<?php echo wp_logout_url(); ?>"><?php _e('Log out', 'larestaurante'); ?></a>
+                                <a href="<?php echo wp_logout_url(); ?>"><?php _e('Log out', 'wptheme'); ?></a>
                             </h5>
                         </li>
 
                         <li>
                             <h5><a target="_blank" href="<?php echo admin_url(); ?>" title="Admin">
-                                    <?php _e('Go to admin panel here', 'larestaurante'); ?></a>
+                                    <?php _e('Go to admin panel here', 'wptheme'); ?></a>
                             </h5>
                         </li>
                     </ul>
@@ -163,7 +163,7 @@
             </div>
 
             <div class="col-sm-12 col-md-4">
-                <h5 style="color:beige;"><?php echo esc_html__('telephone number: ', 'larestaurante');
+                <h5 style="color:beige;"><?php echo esc_html__('telephone number: ', 'wptheme');
                 echo get_theme_mod('tel_text_block');?></h5>
             </div>
 

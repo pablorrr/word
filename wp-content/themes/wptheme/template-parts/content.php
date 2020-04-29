@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package LaRestaurante
+ * @package wptheme
  */
 
 ?>
@@ -30,7 +30,7 @@
 
         if ('post' === get_post_type()) : ?>
             <div class="entry-meta">
-                <?php larestaurante_posted_on(); ?>
+                <?php wptheme_posted_on(); ?>
             </div><!-- .entry-meta -->
         <?php
         endif; ?>
@@ -40,17 +40,17 @@
         if (is_single()) :
             the_content();
         else :
-            the_content(__('Continue reading <span class="meta-nav">&rarr;</span>', 'larestaurante'));
+            the_content(__('Continue reading <span class="meta-nav">&rarr;</span>', 'wptheme'));
         endif;
 
         wp_link_pages(array(
-            'before' => '<div class="page-links">' . esc_html__('Pages:', 'larestaurante'),
+            'before' => '<div class="page-links">' . esc_html__('Pages:', 'wptheme'),
             'after' => '</div>',
         ));
         ?>
     </div><!-- .entry-content -->
 
     <footer class="entry-footer">
-        <?php larestaurante_entry_footer(); ?>
+        <?php wptheme_entry_footer(); ?>
     </footer><!-- .entry-footer -->
 </article><!-- #post-## -->

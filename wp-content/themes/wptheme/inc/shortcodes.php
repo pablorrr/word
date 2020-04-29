@@ -5,7 +5,7 @@
  * 
  * url source: https://codex.wordpress.org/Shortcode_API
  *
- * @package LaRestaurante
+ * @package wptheme
  */
  
 /* Bootstrap Tootlip */

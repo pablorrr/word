@@ -7,7 +7,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package larestaurante
+ * @package wptheme
  */
 
 /*
@@ -29,7 +29,7 @@ if ( post_password_required() ) {return;}
             $comments_number = get_comments_number();
             if ( '1' === $comments_number ) {
                 /* translators: %s: post title */
-                printf( _x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'larestaurante' ), get_the_title() );
+                printf( _x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'wptheme' ), get_the_title() );
             } else {
                 printf(
                 /* translators: 1: number of comments, 2: post title */
@@ -38,7 +38,7 @@ if ( post_password_required() ) {return;}
                         '%1$s thoughts on &ldquo;%2$s&rdquo;',
                         $comments_number,
                         'comments title',
-                        'larestaurante'
+                        'wptheme'
                     ),
                     number_format_i18n( $comments_number ),
                     get_the_title()
@@ -50,26 +50,26 @@ if ( post_password_required() ) {return;}
 
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to //navigate through? ?>
             <nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-                <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'larestaurante' ); ?></h2>
+                <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'wptheme' ); ?></h2>
                 <div class="nav-links">
 
-                    <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'larestaurante' ) ); ?></div>
-                    <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'larestaurante' ) ); ?></div>
+                    <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'wptheme' ) ); ?></div>
+                    <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'wptheme' ) ); ?></div>
 
                 </div><!-- .nav-links -->
             </nav><!-- #comment-nav-above -->
         <?php endif; // Check for comment navigation. ?>
 
         <ul class="comment-list">
-            <?php wp_list_comments( array( 'callback' => 'larestaurante_comments_feed_template_callback', 								'avatar_size' => 50 ));?>
+            <?php wp_list_comments( array( 'callback' => 'wptheme_comments_feed_template_callback', 								'avatar_size' => 50 ));?>
         </ul><!-- .comment-list -->
 
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to //navigate through? ?>
             <nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-                <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'larestaurante' ); ?></h2>
+                <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'wptheme' ); ?></h2>
                 <div class="nav-links">
-					<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'larestaurante' ) ); ?></div>
-                    <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'larestaurante' ) ); ?></div>
+					<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'wptheme' ) ); ?></div>
+                    <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'wptheme' ) ); ?></div>
 				</div><!-- .nav-links -->
             </nav><!-- #comment-nav-below -->
             <?php
@@ -81,7 +81,7 @@ if ( post_password_required() ) {return;}
     // If comments are closed and there are comments, let's leave a little note, shall we?
     if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 
-        <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'larestaurante' ); ?></p>
+        <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'wptheme' ); ?></p>
         <?php
     endif; ?>
 
@@ -90,15 +90,15 @@ if ( post_password_required() ) {return;}
         'id_submit'         => 'commentsubmit',
 		'class_form'     	=> 'comment-form',
 		'class_submit'      => 'fr-end-butt',
-        'title_reply'       => __( 'Leave a Reply', 'larestaurante' ),  // that's the wordpress default value! delete it or edit it ;)
-        'title_reply_to'    => __( 'Leave a Reply to %s', 'larestaurante' ),  // that's the wordpress default value! delete it or edit it ;)
-        'cancel_reply_link' => __( 'Cancel Reply', 'larestaurante' ),  // that's the wordpress default value! delete it or edit it ;)
-        'label_submit'      => __( 'Post Comment', 'larestaurante' ),  // that's the wordpress default value! delete it or edit it ;)
+        'title_reply'       => __( 'Leave a Reply', 'wptheme' ),  // that's the wordpress default value! delete it or edit it ;)
+        'title_reply_to'    => __( 'Leave a Reply to %s', 'wptheme' ),  // that's the wordpress default value! delete it or edit it ;)
+        'cancel_reply_link' => __( 'Cancel Reply', 'wptheme' ),  // that's the wordpress default value! delete it or edit it ;)
+        'label_submit'      => __( 'Post Comment', 'wptheme' ),  // that's the wordpress default value! delete it or edit it ;)
 
         'comment_field' =>  '<textarea placeholder="Start typing..." id="comment" class="form-control" name="comment" cols="45" rows="8" aria-required="true"></textarea>',
 
         'comment_notes_after' => '<p class="form-allowed-tags">' .
-            __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:', 'larestaurante' ) .
+            __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:', 'wptheme' ) .
             '</p><div class="alert alert-info">' . allowed_tags() . '</div>'
 
         // So, that was the needed stuff to have bootstrap basic styles for the form elements and buttons

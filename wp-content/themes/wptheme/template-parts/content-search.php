@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package LaRestaurante
+ * @package wptheme
  */
 
 ?>
@@ -15,16 +15,16 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php larestaurante_posted_on(); ?>
+			<?php wptheme_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-summary">
-		<?php larestaurante_the_excerpt_max_charlength(100); ?>
+		<?php wptheme_the_excerpt_max_charlength(100); ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php larestaurante_entry_footer(); ?>
+		<?php wptheme_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

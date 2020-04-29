@@ -23,10 +23,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <form  class="form-inline" role="search" method="get" class="woocommerce-product-search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
   
-	<label class="screen-reader-text" for="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>"><?php esc_html_e( 'Search for:', 'larestaurante' ); ?></label>
-	<input class="form-control" type="search" id="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>" class="search-field" placeholder="<?php echo esc_attr__( 'Search products&hellip;', 'larestaurante' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+	<label class="screen-reader-text" for="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>"><?php esc_html_e( 'Search for:', 'wptheme' ); ?></label>
+	<input class="form-control" type="search" id="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>" class="search-field" placeholder="<?php echo esc_attr__( 'Search products&hellip;', 'wptheme' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
    
-	<button class="btn btn-secondary" type="submit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'larestaurante' ); ?>"><?php echo esc_html_x( 'Search', 'submit button', 'larestaurante' ); ?></button>
+	<button class="btn btn-secondary" type="submit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'wptheme' ); ?>"><?php echo esc_html_x( 'Search', 'submit button', 'wptheme' ); ?></button>
 	<input type="hidden" name="post_type" value="product" />  
  
 </form>

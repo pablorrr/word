@@ -8,8 +8,8 @@
 
 	<div class="col-1">
 
-		<h4><?php _e( 'About me', 'larestaurante' ); ?></h4>
-		<p><?php _e( 'Im a freelancer.My passion is webmastering , especially Wordpress.', 'larestaurante' ); ?></p>
-		<p><?php echo sprintf( esc_html__('%sVisit my website%s', 'larestaurante'), '<a href="https://www.websitecreator.cba.pl" target="_blank" class="button">', '</a>'); ?></p>
+		<h4><?php _e( 'About me', 'wptheme' ); ?></h4>
+		<p><?php _e( 'Im a freelancer.My passion is webmastering , especially Wordpress.', 'wptheme' ); ?></p>
+		<p><?php echo sprintf( esc_html__('%sVisit my website%s', 'wptheme'), '<a href="https://www.websitecreator.cba.pl" target="_blank" class="button">', '</a>'); ?></p>
 	</div>
 </div>
