@@ -21,13 +21,6 @@ require get_template_directory() . '/inc/widgets.php';
  * Enqueue scripts and styles.
  */
 require get_template_directory() . '/inc/enqueue.php';
-
-
-/**
- * Metabox definition area.
- */
-require get_template_directory() . '/inc/metabox.php';
-
 /**
  * Implement the Custom Header feature.
  */

@@ -10,51 +10,49 @@
  * @package LaRestaurante
  */
 
-get_header('woo');?>
+get_header('woo'); ?>
 
-<div class="wrapper" id="woocommerce-wrapper">
+    <div class="wrapper" id="woocommerce-wrapper">
 
-	<div class="row">
-	
-			<div class="col-md-12">
-				<main class="site-main" id="main">
-					
-						<div class="site-search">
-							<?php if(function_exists('woocomerce_product_search')){
-								echo woocommerce_product_search();}	
-								else
-								the_widget('WC_Widget_Product_Search','title=');?>
-						</div>
-				
-					<?php 
-					
-						$template_name = '\archive-product.php'; 
-						$args = array(); 
-						$template_path = ''; 
-						$default_path = untrailingslashit( plugin_dir_path(__FILE__) ) . '\woocommerce';
+        <div id="content" class="row">
 
-							if ( is_singular( 'product' ) ) {
+            <div class="col-md-12">
+                <main class="site-main" id="main">
 
-								woocommerce_content();
+                    <div class="site-search">
+                        <?php if (function_exists('woocomerce_product_search')) {
+                            echo woocommerce_product_search();
+                        } else
+                            the_widget('WC_Widget_Product_Search', 'title='); ?>
+                    </div>
 
-					//For ANY product archive, Product taxonomy, product search or /shop landing page etc Fetch the template override;
-						} 	elseif ( file_exists( $default_path . $template_name ) )
-							{
-							wc_get_template( $template_name, $args, $template_path, $default_path );
+                    <?php
 
-					//If no archive-product.php template exists, default to catchall;
-						}	else  {
-							woocommerce_content( );
-						}
-					;?>
+                    $template_name = '\archive-product.php';
+                    $args = array();
+                    $template_path = '';
+                    $default_path = untrailingslashit(plugin_dir_path(__FILE__)) . '\woocommerce';
 
-				</main><!-- #main -->
+                    if (is_singular('product')) {
 
-			</div><!--col-md-12-->
-		<!-- Do the right sidebar check -->
-		
+                        woocommerce_content();
 
-	</div><!-- .row -->
+                        //For ANY product archive, Product taxonomy, product search or /shop landing page etc Fetch the template override;
+                    } elseif (file_exists($default_path . $template_name)) {
+                        wc_get_template($template_name, $args, $template_path, $default_path);
 
-</div><!-- Container end .wrapper #woocommerce-wrapper -->
+                        //If no archive-product.php template exists, default to catchall;
+                    } else {
+                        woocommerce_content();
+                    }; ?>
+
+                </main><!-- #main -->
+
+            </div><!--col-md-12-->
+            <!-- Do the right sidebar check -->
+
+
+        </div><!-- .row -->
+
+    </div><!-- Container end .wrapper #woocommerce-wrapper -->
 <?php get_footer(); ?>

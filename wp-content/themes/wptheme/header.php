@@ -80,7 +80,7 @@
     <div class="site-branding">
     <div class="wrap">
     <div class="site-branding-text">
-    <?php if (is_front_page() && !has_custom_logo(get_current_blog_id())) : ?>
+    <?php if (is_front_page() && !has_custom_logo(get_current_blog_id()) || is_archive() || is_single()) : ?>
         <h1 class="site-title respo"><a style="font-size:2.3em;" class="site-title"
                                         href="<?php echo esc_url(home_url('/')); ?>"
                                         rel="home"><?php bloginfo('name'); ?></a></h1>

@@ -14,7 +14,7 @@
     <div class="container-fluid">
         <!-- scroll page angle -->
         <div class="row justify-content-end">
-            <?php if (is_front_page()): ?>
+            <?php if (is_front_page() || is_archive() || (is_single() && !is_woocommerce()) ): ?>
                 <div class="col-md-12 arrow-up">
                     <a href="#content" class="page-scroller"><i class="fa fa-fw fa-angle-up fa-3x anim"></i></a>
                 </div>

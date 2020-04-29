@@ -7,7 +7,7 @@
  * @package larestaurante
  */
 
-get_header('nomenu'); ?>
+get_header(); ?>
 
 <div class="container">
     <div class="row mx-auto m-single">

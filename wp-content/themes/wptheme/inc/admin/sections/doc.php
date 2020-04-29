@@ -2,9 +2,9 @@
 /**
  * Welcome screen add-ons template
  */
- $formatted_string = wpautop('LaRestaurante is a:
+$formatted_string = wpautop('LaRestaurante is a:
 													- responsive ( Bootsrap 4 framework ),
-													- customizable ( Wp Customizer,Codestar Framework ),
+													- customizable ( Wp Customizer),
 													- translatable,
 													- supported e-shoping ( Woocommerce )
 													
@@ -14,10 +14,7 @@
 										archive.php- for archive pages
 										index.php
 										page.php - for static pages
-										front-page.php - for first front page with optional segments 
 										header.php
-										header-blog.php - for blog header
-										header-arch.php - for archive header
 										sidebar.php
 										footer.php
 										woocommerce.php -for supporting woocommerce (dispalying woo pages)
@@ -33,28 +30,26 @@
 										
 							This theme takes advantage of these generous tools:
 
-									Font Awesome
-									http://fortawesome.github.io/Font-Awesome/license/
+									
 
 									WP Bootstrap Starter
 									https://afterimagedesigns.com/wp-bootstrap-starter/
 									https://afterimagedesigns.com/
 
-									Google Fonts
-									https://www.google.com/fonts
+									
 									
 							Theme Screenshot image from Pixabay:
 									https://www.pexels.com/photo-license/
 									
 							License:
 									License: GNU General Public License v2.0
-									License URI:http://www.gnu.org/licenses/gpl-2.0.html');?>
+									License URI:http://www.gnu.org/licenses/gpl-2.0.html'); ?>
 
 <div id="add_on" class="add-ons panel" style="padding-top: 1.618em; clear: both;">
-	<h2><?php echo  esc_html__( 'Read documentation','larestaurante'); ?></h2>
+    <h2><?php echo esc_html__('Read documentation', 'larestaurante'); ?></h2>
 
-	<p class="tagline">
-		<?php echo $formatted_string; ?>
-	</p>
-<hr style="clear: both;" />
+    <p class="tagline">
+        <?php echo $formatted_string; ?>
+    </p>
+    <hr style="clear: both;"/>
 </div>
