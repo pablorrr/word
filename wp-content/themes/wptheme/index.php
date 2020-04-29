@@ -54,4 +54,6 @@ get_header(); ?>
 		</div><!--.row .mx-auto .m-single -->
 </div><!--#content-->
 		
-<?php get_footer();?>
+<?php get_footer();
+//testing push
+?>
