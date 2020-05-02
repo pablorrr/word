@@ -42,19 +42,19 @@ msgstr[2] ""
 
 #: comments.php:53 comments.php:69
 msgid "Comment navigation"
-msgstr ""
+msgstr "Nawigacja komentarzy"
 
 #: comments.php:56 comments.php:71
 msgid "Older Comments"
-msgstr ""
+msgstr "Starsze komentarze"
 
 #: comments.php:57 comments.php:72
 msgid "Newer Comments"
-msgstr ""
+msgstr "Nowsze komentarze"
 
 #: comments.php:84
 msgid "Comments are closed."
-msgstr ""
+msgstr "Komentarze są wyłączone."
 
 #: comments.php:93
 msgid "Leave a Reply"
@@ -121,19 +121,19 @@ msgstr "Popularne tagi i kategorie"
 
 #: footer.php:146 woocommerce/myaccount/form-login.php:55
 msgid "Log in"
-msgstr ""
+msgstr "zaloguj sie"
 
 #: footer.php:152
 msgid "Log out"
-msgstr ""
+msgstr "wyloguj sie"
 
 #: footer.php:158
 msgid "Go to admin panel here"
-msgstr ""
+msgstr "Przejdź do Panelu Administracyjnego"
 
 #: footer.php:166
 msgid "telephone number: "
-msgstr ""
+msgstr "numer telefonu"
 
 #: header-woo.php:70 header.php:70
 #, php-format
@@ -144,23 +144,23 @@ msgstr ""
 
 #: header-woo.php:91
 msgid "Shop Page"
-msgstr ""
+msgstr "Strona Sklepu"
 
 #: header-woo.php:93
 msgid "Checkout Page"
-msgstr ""
+msgstr "Strona Zamówienia"
 
 #: header-woo.php:95
 msgid "Cart Page"
-msgstr ""
+msgstr "Strona Koszyka"
 
 #: header-woo.php:97
 msgid "Account Page"
-msgstr ""
+msgstr "Twoje Konto"
 
 #: header-woo.php:99
 msgid "Product Page"
-msgstr ""
+msgstr "Strona Produktu"
 
 #: header-woo.php:101
 msgid "Product Category Page"
@@ -216,7 +216,7 @@ msgstr ""
 
 #: inc/customizer.php:58
 msgid "Other Customizations"
-msgstr ""
+msgstr "Inne Ustawienia"
 
 #: inc/customizer.php:66
 msgid "Background Color"
@@ -236,7 +236,7 @@ msgstr ""
 
 #: inc/customizer.php:118
 msgid "Opening Hours"
-msgstr ""
+msgstr "Godziny Otwarcia"
 
 #: inc/customizer.php:119 inc/customizer.php:304
 msgid "Set editable text for certain content."
@@ -1065,7 +1065,7 @@ msgstr ""
 
 #: woocommerce/cart/cart-empty.php:33
 msgid "Return to shop"
-msgstr ""
+msgstr "Powróć do Sklepu"
 
 #: woocommerce/cart/cart-shipping.php:50 woocommerce/cart/cart-shipping.php:52
 msgid ""
