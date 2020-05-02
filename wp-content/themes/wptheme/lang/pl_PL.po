@@ -1,34 +1,29 @@
-#, fuzzy
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n" #sposob interpretacji liczby mnogiej rzeczownikow
-"Project-Id-Version: My Simple Google Map Plugin\n" #nazwa pluginu zgodnosc z deklaracja naglowka pluginu
-"POT-Creation-Date: 2015-10-05 10:23-0500\n" #data stworzenia pliku pot
-"PO-Revision-Date: 2015-10-05 10:23-0500\n" #data korekty pliku pot
-"Last-Translator: Pawel Kalisz <monkeyfashion@op.pl>\n" #nazwa i email tłumacza
-"Language-Team:My Group <mygroup@gl.pl>\n" #nazwa grupy i eamil tlumaczy
-"MIME-Version: 1.0\n" #wersja protoklu obslugujacego email
-"Content-Type: text/plain; charset=UTF-8\n" #sposob kodowania znakow
-"Content-Transfer-Encoding: 8bit\n" #sposob kodowania znakow( maszynowy- njprwd postac maszynaowa)
-"X-Generator: Poedit 1.8.5\n" #wersja poedit
-"X-Poedit-Basepath: ..\n" #oznacza ze plik z tlumaczeniem znajduje sie w podfolderze aplikacji
-"X-Poedit-WPHeader: my-simple-google-map-plugin.php\n" #nazwa pliku z tlumaczeniem
-"X-Poedit-SourceCharset: UTF-8\n" #sposob kodowania
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;" #lista slow kluczy po ktorych zanki #maja być tłumaczone
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
+"Language: pl_PL\n"
 
 #: 404.php:18
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "Ups! Ta strona nie została znaleziona."
 
 #: 404.php:22
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
+"Żadna strona nie znajduje się pod tym adresem. Sprawdź, czy wpisany adres "
+"jest poprawny lub skorzystaj z wyszukiwarki."
 
 #: comments.php:32
 #, php-format
@@ -43,6 +38,7 @@ msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: comments.php:53 comments.php:69
 msgid "Comment navigation"
@@ -109,19 +105,19 @@ msgstr ""
 
 #: footer.php:50
 msgid "Sign in with Twitter"
-msgstr ""
+msgstr "Zaloguj się przez Twitter"
 
 #: footer.php:58
 msgid "Sign in with Facebook"
-msgstr ""
+msgstr "Zaloguj się przez Facebook"
 
 #: footer.php:66
 msgid "Sign in with Youtube"
-msgstr ""
+msgstr "Zaloguj się za pomocą youtube"
 
 #: footer.php:83
 msgid "Popular tags and categories"
-msgstr ""
+msgstr "Popularne tagi i kategorie"
 
 #: footer.php:146 woocommerce/myaccount/form-login.php:55
 msgid "Log in"
@@ -619,6 +615,7 @@ msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: inc/plugin-compatibility/class-tgm-plugin-activation.php:349
 #, php-format
@@ -626,6 +623,7 @@ msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: inc/plugin-compatibility/class-tgm-plugin-activation.php:355
 #, php-format
@@ -637,6 +635,7 @@ msgid_plural ""
 "maximum compatibility with this theme: %1$s."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: inc/plugin-compatibility/class-tgm-plugin-activation.php:361
 #, php-format
@@ -644,6 +643,7 @@ msgid "There is an update available for: %1$s."
 msgid_plural "There are updates available for the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: inc/plugin-compatibility/class-tgm-plugin-activation.php:367
 #, php-format
@@ -651,6 +651,7 @@ msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: inc/plugin-compatibility/class-tgm-plugin-activation.php:373
 #, php-format
@@ -658,24 +659,28 @@ msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: inc/plugin-compatibility/class-tgm-plugin-activation.php:378
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: inc/plugin-compatibility/class-tgm-plugin-activation.php:383
 msgid "Begin updating plugin"
 msgid_plural "Begin updating plugins"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: inc/plugin-compatibility/class-tgm-plugin-activation.php:388
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: inc/plugin-compatibility/class-tgm-plugin-activation.php:392
 msgid "Return to Required Plugins Installer"
@@ -699,6 +704,7 @@ msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: inc/plugin-compatibility/class-tgm-plugin-activation.php:397
 #, php-format
@@ -826,6 +832,7 @@ msgid "All <span class=\"count\">(%s)</span>"
 msgid_plural "All <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: inc/plugin-compatibility/class-tgm-plugin-activation.php:2477
 #, php-format
@@ -833,6 +840,7 @@ msgid "To Install <span class=\"count\">(%s)</span>"
 msgid_plural "To Install <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: inc/plugin-compatibility/class-tgm-plugin-activation.php:2481
 #, php-format
@@ -840,6 +848,7 @@ msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: inc/plugin-compatibility/class-tgm-plugin-activation.php:2485
 #, php-format
@@ -847,6 +856,7 @@ msgid "To Activate <span class=\"count\">(%s)</span>"
 msgid_plural "To Activate <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: inc/plugin-compatibility/class-tgm-plugin-activation.php:2567
 msgctxt "as in: \"version nr unknown\""
@@ -1315,24 +1325,20 @@ msgstr ""
 msgid "Username or email"
 msgstr ""
 
-#: woocommerce/global/form-login.php:39
-#: woocommerce/myaccount/form-login.php:47
+#: woocommerce/global/form-login.php:39 woocommerce/myaccount/form-login.php:47
 #: woocommerce/myaccount/form-login.php:97
 msgid "Password"
 msgstr ""
 
-#: woocommerce/global/form-login.php:48
-#: woocommerce/myaccount/form-login.php:36
+#: woocommerce/global/form-login.php:48 woocommerce/myaccount/form-login.php:36
 msgid "Login"
 msgstr ""
 
-#: woocommerce/global/form-login.php:51
-#: woocommerce/myaccount/form-login.php:57
+#: woocommerce/global/form-login.php:51 woocommerce/myaccount/form-login.php:57
 msgid "Remember me"
 msgstr ""
 
-#: woocommerce/global/form-login.php:55
-#: woocommerce/myaccount/form-login.php:61
+#: woocommerce/global/form-login.php:55 woocommerce/myaccount/form-login.php:61
 msgid "Lost your password?"
 msgstr ""
 
@@ -1356,6 +1362,7 @@ msgid "Showing the single result"
 msgid_plural "Showing all %d results"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: woocommerce/loop/result-count.php:34
 #, php-format
@@ -1364,6 +1371,7 @@ msgid "Showing the single result"
 msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: woocommerce/loop/sale-flash.php:28
 #: woocommerce/single-product/sale-flash.php:28
@@ -1484,6 +1492,7 @@ msgid "%s download remaining"
 msgid_plural "%s downloads remaining"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: woocommerce/myaccount/my-orders.php:13
 msgid "Order"
@@ -1508,6 +1517,7 @@ msgid "%1$s for %2$s item"
 msgid_plural "%1$s for %2$s items"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: woocommerce/myaccount/orders.php:89
 msgid "Previous"
@@ -1560,12 +1570,14 @@ msgid "Category:"
 msgid_plural "Categories:"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: woocommerce/single-product/meta.php:37
 msgid "Tag:"
 msgid_plural "Tags:"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: woocommerce/single-product/photoswipe.php:35
 msgid "Close (Esc)"
@@ -1597,6 +1609,7 @@ msgid "%s customer review"
 msgid_plural "%s customer reviews"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: woocommerce/single-product/related.php:27
 msgid "Related products"

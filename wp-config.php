@@ -86,6 +86,8 @@ define('PATH_CURRENT_SITE', '/word/');
 define('SITE_ID_CURRENT_SITE', 1);
 define('BLOG_ID_CURRENT_SITE', 1);
 
+define('WPLANG', 'pl_PL');
+
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
